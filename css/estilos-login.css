@@ -1,0 +1,228 @@
+/* login formulario*/
+body {
+    background-image: url(../img/fondo\ american.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+.form {
+    height: 95%;
+    width: 100%;
+    background: #ffffffd2;
+    border-radius: 20px;
+    border: none;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+h1 {
+    width: 20%;
+    text-align: center;
+    color: #7c0404;
+    margin-top: 160px;
+    margin-left: 740px;
+    border-top: 2px solid rgba(0, 0, 0, 0.849);
+    padding-top: 30px;
+    font-weight: bold;
+  }
+h1 span {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    padding-left: 10px;
+}
+  
+  .form-inputs {
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 760px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.849);
+  }
+  
+  .form-inputs .input-div {
+    position: relative;
+    padding: 5px;
+    width: 360px;
+  
+  }
+  
+  .input-div input {
+    margin-top: 10px;
+    width: 134%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    background: #000000c9;
+    margin: 5px 0;
+  }
+  
+  .input-div input:focus {
+    border: 1px solid #ff1c1c;
+  }
+  
+  .input-div input::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .button-div {
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  .button-div .btn-style {
+    width: 95%;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #212529;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button-div .btn-style:hover {
+    transition: .4s;
+    cursor: pointer;
+    background-color: rgb(107, 12, 12);
+    color: rgb(255, 255, 255);
+  }
+  
+  .register-link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+  }
+  
+  .register-link .redirect {
+    font-size: 14px;
+    color: #111;
+    text-align: center;
+  }
+  
+  .redirect a {
+    text-decoration: none;
+    color: rgb(110, 0, 0);
+  }
+  
+  .redirect a:hover {
+    color: rgb(107, 12, 12);
+    transition: .4s;
+  }
+  
+  .social {
+    position: relative;
+    display: flex;
+  }
+  
+  .social svg {
+    cursor: pointer;
+  }
+  
+  .social svg+svg {
+    margin-left: .6rem;
+  }
+  
+  .volver {
+    position: relative;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(107, 12, 12);
+    bottom: 20px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 31%;
+    border: 2px solid rgb(90, 90, 67);
+  }
+  
+  .volver a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .volver a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .volver:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .volver:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .volver::after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    
+  }
+  
+  .volver::after {
+    background-color: #971515;
+    
+  }
+  
+  .volver:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  
+  }
+  
+  @media (min-width: 350px) {
+    .form h1 {
+     font-size: 26px;
+   }
+  
+   .form-inputs .input-div {
+     width: 250px;
+   }
+  
+   .input-div input {
+     font-size: 12px;
+     margin: 2px 0;
+   }
+  
+   .input-div input::placeholder {
+     font-size: 12px;
+   }
+  
+   .button-div {
+     margin-top: 2px;
+   }
+  
+   .button-div .btn-style {
+     font-size: 14px;
+   }
+  
+   .register-link .redirect {
+     font-size: 12px;
+   }
+  
+  }
+  
