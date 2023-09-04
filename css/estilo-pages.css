@@ -13,18 +13,10 @@ body {
     background-color: #5f0000;
     border: 2px solid white;
 }
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    padding-left: 670px;
-}
-
 /*seccion de compra*/
 .conteiner {
     height: 600px;
-    width: 70%;
+    width: 50%;
     bottom: 150px;
     background-color: #5f0000;
     border: 3px solid gray;
@@ -33,7 +25,7 @@ h1{
 .nleft .clasic{
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 600px;
     height: 594px;
 }
 .nleft .doble{
@@ -43,7 +35,7 @@ h1{
 }
 .nleft .vegan{
     position: relative;
-    width: 100%;
+    width: 600px;
     height: 593px;
 }
 .nright{
@@ -51,6 +43,7 @@ h1{
     float: right;
     position: relative;
     padding-top: 5px;
+    margin-left: 300px;
 }
 .nright h2{
     font-size: 28px;
@@ -71,7 +64,7 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
-    padding-left: 38%;
+    padding-left: 30%;
     padding-top: 5%;   
 }
 
@@ -82,7 +75,7 @@ h1{
     text-shadow: 0 0 5px black;
     position: relative;
     font-weight: bold;
-    right: 10%;
+    right: 5%;
     top: 10px;
     font-weight: bold;
     
@@ -95,7 +88,7 @@ h1{
     position: relative;
     text-decoration: none;
     top: 50px;
-    left: 230px;
+    left: 120px;
     font-weight: bold;
 }
 .nright h4{
@@ -133,8 +126,8 @@ h1{
     background-color: rgb(107, 12, 12);
     letter-spacing: 2px;
     border: 3px solid white;
-    left: 908px;
-    bottom: 60%;
+    left: 700px;
+    bottom: 50%;
     
 }
 .compra a{
@@ -185,7 +178,7 @@ h1{
     background-color: rgb(107, 12, 12);
     letter-spacing: 2px;
     border: 3px solid white;
-    left: 880px;
+    left: 710px;
     bottom: 60%;
     
 }
