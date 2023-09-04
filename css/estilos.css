@@ -1,33 +1,42 @@
 body {
     background-image: url(../img/fondo\ american.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .navbar {
-    height: 120px;
+    height: 150px;
     background-image: url(../img/fondo\ american.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .container-fluid {
     background-color: rgba(255, 255, 255, 0.842);
+    height: 220px;
 }
 
 .img-navbar {
-    height: 120px;
+    height: 150px;
+    margin-top: 10px;
 }
 
+
 .nav-link {
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
     color: rgb(255, 255, 255) !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold !important;
     letter-spacing: 2px;
-    font-weight: bold;
     padding: 1em 2.5em;
     text-transform: uppercase;
-    border-radius: 8em;
+    border-radius: 1em;
     transition: all .2s;
     background-color: rgb(107, 12, 12);
-    letter-spacing: 2px;
+    letter-spacing: 8px;
     border: 2px solid rgb(255, 255, 255);
 }
 
@@ -65,12 +74,13 @@ body {
 
 .carrito {
     color: rgb(143, 17, 17);
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 8px;
 }
 
 .jumbotron {
     background-image: url(../img/imagen\ seccion.jpg);
-    height: 700px;
+    height: 750px;
     background-position: center;
     background-size: cover;
 }
@@ -81,7 +91,8 @@ h1 {
     text-transform: uppercase;
     color: white;
     text-shadow: 0 0 5px black;
-    position: CENTER;
+    position: relative;
+    top: 180px;
     font-family: Arial, Helvetica, sans-serif;
     opacity: 0.75;
     cursor: default;
@@ -89,22 +100,24 @@ h1 {
     user-select: none;
     filter: brightness(1) invert(0);
 }
-
-#contact {
-    margin-top: 20px;
+#menu{
+    height: 100%;
+    width: 100%;
 }
 
+#contact {
+    margin-top: 300px;
+}
 h2 {
+    top: 10px;
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 60px !important;
     color: rgb(255, 255, 255);
     background-color: #5f0000;
     border: 2px solid white;
 }
-
-
 .clasica {
     background-image: url(../img/Clasica.png);
     background-position: center;
@@ -149,21 +162,67 @@ h2 {
         background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
         justify-content: center !important;
+        
+    }
+    #contact{
+        margin-top: 1300px;
     }
 }
 .formulario {
+    height: 100%;
     background-color: #000000b2;
+}
+.form-control{
+    height: 250px;
+    margin-bottom: 1%;
 }
 .btn-info {
     background-color: #5e1515;
     color: white;
     height: 50px;
-    width: 100px !important;
+    width: 120px !important;
     margin-left: 2%;
-    font-size: 20px;
-    text-align: center;
-    border: 2px solid gray;
+    margin-bottom: 1%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    border-radius: 1em;
+    transition: all .2s;
+    border: 2px solid rgb(255, 255, 255);
 }
+.btn-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+
+.btn-info:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-info::after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-info::after {
+    background-color: rgb(107, 12, 12);
+}
+
+.btn-info:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
 .comment {
     color: rgb(255, 255, 255);
     font-weight: bold;
