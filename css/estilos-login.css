@@ -11,7 +11,7 @@ body {
     background: #ffffffd2;
     border-radius: 20px;
     border: none;
-    padding: 50px;
+    padding-top: 9%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,7 +37,7 @@ h1 span {
   
   .form-inputs {
     width: 350px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 760px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.849);
   }
@@ -195,6 +195,5 @@ h1 span {
   }
   
   @media (min-width: 0px) and (max-width: 580px) {
-
 }
   
