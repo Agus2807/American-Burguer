@@ -304,24 +304,56 @@ footer {
 }
 
 .footer-subscribe>button {
-    cursor: pointer;
-    background-color: var(--text-color);
-    border-radius: 8px;
-    color: white;
-    font-size: 1.25rem;
-    min-width: 120px;
-    min-height: 36px;
-    flex: 1 0 80px;
-    white-space: nowrap;
-    padding: 8px 12px;
-    border: 2px solid rgb(122, 18, 18);
-    outline: none;
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+    background-color: rgb(107, 12, 12);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px solid white;
+    font-weight: bold;
 }
 
 .footer-subscribe>button:hover {
     background-color: #5e1515;
     color: #ffffff;
+}
+.footer-subscribe>button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0.2);
+}
 
+.footer-subscribe>button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-subscribe>button:after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.footer-subscribe>button::after {
+    background-color: #971515;
+}
+
+.footer-subscribe>button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 /*? footer columns */
@@ -424,15 +456,28 @@ footer {
     gap: 15px;
     transition: all 0.2s ease-in-out;
     font-size: 25px;
-    color: #ffffff !important;
-    text-decoration: none;
-
 }
-
 
 .social-links:hover {
     transform: scale(1.1);
 }
+.fa-instagram{
+    color: #e9a322;
+}
+.fa-whatsapp{
+    color: #4cce2c;
+}
+.fa-linkedin{
+    color: #205fe7;
+}
+.fa-youtube{
+    color: #f50b0b;
+}
+.fa-github{
+    color: #111420;
+}
+
+
 
 /*? mobile */
 

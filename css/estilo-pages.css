@@ -4,6 +4,7 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
 .titulo {
     position: relative;
     text-align: center;
@@ -13,6 +14,7 @@ body {
     background-color: #5f0000;
     border: 2px solid white;
 }
+
 /*seccion de compra*/
 .conteiner {
     height: 600px;
@@ -22,53 +24,60 @@ body {
     border: 3px solid gray;
     margin-top: 25px;
 }
-.nleft .clasic{
+
+.nleft .clasic {
     background-size: cover;
     background-position: center;
     width: 600px;
     height: 594px;
 }
-.nleft .doble{
+
+.nleft .doble {
     position: relative;
     width: 600px;
-    height: 595px;   
+    height: 595px;
 }
-.nleft .vegan{
+
+.nleft .vegan {
     position: relative;
     width: 600px;
     height: 593px;
 }
-.nright{
+
+.nright {
     display: block;
     float: right;
     position: relative;
     padding-top: 5px;
     margin-left: 300px;
 }
-.nright h2{
+
+.nright h2 {
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
     font-weight: bold;
 }
-.nright span{
+
+.nright span {
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
-    font-weight: bold;      
+    font-weight: bold;
 }
-.nright p{
+
+.nright p {
     font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
     padding-left: 30%;
-    padding-top: 5%;   
+    padding-top: 5%;
 }
 
-.nright h3{
+.nright h3 {
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
@@ -78,9 +87,10 @@ body {
     right: 5%;
     top: 10px;
     font-weight: bold;
-    
+
 }
-.nright s{
+
+.nright s {
     font-size: 28px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
@@ -91,14 +101,16 @@ body {
     left: 120px;
     font-weight: bold;
 }
-.nright h4{
+
+.nright h4 {
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
     font-weight: bold;
 }
-.nright u{
+
+.nright u {
     font-size: 28px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
@@ -128,41 +140,46 @@ body {
     border: 3px solid white;
     left: 700px;
     bottom: 50%;
-    
+
 }
-.compra a{
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
+
+.compra a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
+
 .compra:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
- }
- .compra:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
- }
- .compra::after {
-  content: "🍔";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
- }   
- .compra::after {
-  background-color:  rgb(107, 12, 12);
- }
-  
- .compra:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}   
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.compra:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.compra::after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.compra::after {
+    background-color: rgb(107, 12, 12);
+}
+
+.compra:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
 
 .compra__doble {
     position: relative;
@@ -180,41 +197,46 @@ body {
     border: 3px solid white;
     left: 710px;
     bottom: 60%;
-    
+
 }
-.compra__doble a{
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
+
+.compra__doble a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
+
 .compra__doble:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
- }
- .compra__doble:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
- }
- .compra__doble::after {
-  content: "🍔";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
- }   
- .compra__doble::after {
-  background-color:  rgb(107, 12, 12);
- }
-  
- .compra__doble:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}   
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.compra__doble:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.compra__doble::after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.compra__doble::after {
+    background-color: rgb(107, 12, 12);
+}
+
+.compra__doble:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
 
 /*boton volver*/
 .volver {
@@ -232,26 +254,26 @@ body {
     background-color: rgb(107, 12, 12);
     margin-top: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
     border: 3px solid white;
-   }
-   .volver a {
+}
+
+.volver a {
     text-decoration: none;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   }
-   
-   .volver:hover {
+}
+
+.volver:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-   }
-   
-   .volver:active {
+}
+
+.volver:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-   }
-   
-   .volver::after {
+}
+
+.volver::after {
     content: "🍔";
     display: inline-block;
     height: 100%;
@@ -262,68 +284,108 @@ body {
     left: 0;
     z-index: -1;
     transition: all .4s;
-   }
-   
-   .volver::after {
+}
+
+.volver::after {
     background-color: #971515;
-   }
-   
-   .volver:hover::after {
+}
+
+.volver:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
-   }
+}
 
 
-.card{
+.card {
     margin-top: 20px;
 }
-.card-body{
+
+.card-body {
     width: 800px;
-    height: 610px;
+    height: 630px;
     background-color: #5f0000;
     border: 2px solid gray;
 }
-iframe{
+
+iframe {
     width: 760px;
 }
-.card-title{
+
+.card-title {
     color: white;
-}
-.card-text{
-    color: white;
-}
-.btn-primary{
-    color: rgb(255, 255, 255) !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 1em 2.5em;
-    text-transform: uppercase;
-    border-radius: 8em;
-    transition: all .2s;
-    background-color: rgb(107, 12, 12);
-    border: 2px solid rgb(255, 255, 255);
 }
 
+.card-text {
+    color: white;
+}
+
+.btn-primary {
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(107, 12, 12);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px solid white;
+}
+.btn-primary a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-primary a:hover{
+    color: white;
+}
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgb(0, 0, 0.2);
 }
+
 .btn-primary:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.btn-primary:after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-primary::after {
+    background-color: #971515;
+}
+
+.btn-primary:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
 
 @media (min-width: 0) and (max-width: 580px) {
-    .card-body{
+    .card-body {
         width: 100%;
         height: 610px;
         background-color: #5f0000;
         border: 2px solid gray;
     }
-    iframe{
+
+    iframe {
         width: 345px;
     }
 }
