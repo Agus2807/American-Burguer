@@ -1,12 +1,12 @@
 body {
     background-image: url(../img/fondo\ american.jpg);
-    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
-
 .navbar {
-    height: 150px;
-    background-image: url(../img/fondo\ american.jpg);
+    height: 170px;
+    background-image: url(/img/fondo\ american.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -20,8 +20,6 @@ body {
     height: 150px;
     margin-top: 10px;
 }
-
-
 .nav-link {
     width: 200px;
     margin-top: 10px;
@@ -31,7 +29,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold !important;
     letter-spacing: 2px;
-    padding: 1em 2.5em;
     text-transform: uppercase;
     border-radius: 1em;
     transition: all .2s;
@@ -77,74 +74,113 @@ body {
     font-size: 30px;
     margin-top: 8px;
 }
-
-.jumbotron {
-    background-image: url(../img/imagen\ seccion.jpg);
-    height: 750px;
-    background-position: center;
-    background-size: cover;
-}
-
-h1 {
-    font-size: 30px;
+.titulo {
+    position: relative;
     text-align: center;
-    text-transform: uppercase;
-    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: #5f0000;
+    border: 2px solid white;
+}
+/*seccion de compra*/
+.conteiner {
+    height: 600px;
+    width: 100%;
+    background-color: #5f0000;
+    border: 3px solid gray;
+    margin-top: 5px;
+}
+.nleft .doble {
+    position: relative;
+    width: 600px;
+    height: 595px;
+}
+.nright {
+    display: block;
+    float: right;
+    position: relative;
+}
+.nright h3 {
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
     text-shadow: 0 0 5px black;
     position: relative;
-    top: 180px;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.75;
-    cursor: default;
-    z-index: 99;
-    user-select: none;
-    filter: brightness(1) invert(0);
+    font-weight: bold;
+    right: 5%;
+    top: 10px;
+    font-weight: bold;
+
 }
-#menu{
+
+.nright s {
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-shadow: 0 0 5px black;
+    position: relative;
+    text-decoration: none;
+    top: 50px;
+    left: 120px;
+    font-weight: bold;
+}
+.compra__doble {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 1em 2.5em;
+    text-transform: uppercase;
+    border-radius: 8em;
+    transition: all .2s;
+    font-weight: 400%;
+    background-color: rgb(107, 12, 12);
+    letter-spacing: 2px;
+    border: 3px solid white;
+    left: 710px;
+    bottom: 60%;
+
+}
+
+.compra__doble a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.compra__doble:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.compra__doble:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.compra__doble::after {
+    content: "🍔";
+    display: inline-block;
     height: 100%;
     width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
 }
 
-
-.clasica {
-    background-image: url(../img/Clasica.png);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid grey;
-    height: 500px;
-    transition: all 0.9s;
-    border-radius: 15px;
+.compra__doble::after {
+    background-color: rgb(107, 12, 12);
 }
 
-.doble {
-    background-image: url(../img/Doble.jpeg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid grey;
-    height: 500px;
-    transition: all 0.9s;
-    border-radius: 15px;
+.compra__doble:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
-
-.vegan {
-    background-image: url(../img/Vegetariana.png);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid grey;
-    height: 500px;
-    transition: all 0.9s;
-    border-radius: 15px;
-}
-.clasica:hover {
-    transform: scale(1.08);
-}
-.doble:hover {
-    transform: scale(1.08);
-}
-.vegan:hover {
-    transform: scale(1.08);
-}
-
 @media only screen and (min-width: 0) and (max-width:576px) {
     .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.829) !;
@@ -153,18 +189,17 @@ h1 {
         
     }
     #contact{
-        margin-top: 1300px;
+        margin-top: 300px;
     }
 }
 #contact {
-    margin-top: 300px;
+    margin-top: 0.5px;
 }
 h2 {
-    top: 10px;
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60px !important;
+    font-size: 50px;
     color: rgb(255, 255, 255);
     background-color: #5f0000;
     border: 2px solid white;
@@ -229,8 +264,6 @@ h2 {
     font-weight: bold;
     font-size: 20px;
 }
-
-
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
 :root {
@@ -477,9 +510,6 @@ footer {
 .fa-github{
     color: #111420;
 }
-
-
-
 /*? mobile */
 
 @media (max-width: 800px) {
