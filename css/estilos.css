@@ -145,15 +145,14 @@ h1 {
     transform: scale(1.08);
 }
 
-@media (min-width: 0) and (max-width:576px) {
+@media (min-width: 0) and (max-width:580px) {
     .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
         justify-content: center !important;
-        
     }
     #contact {
-        padding-top: 270%;
+        padding-top: 250%;
     }
 }
 #contact {
