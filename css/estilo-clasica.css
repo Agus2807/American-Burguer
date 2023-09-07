@@ -85,7 +85,7 @@ body {
     border: 2px solid white;
 }
 /*seccion de compra*/
-.conteiner {
+.conteiner-fluid{
     height: 600px;
     width: 100%;
     background-color: #5f0000;
@@ -98,15 +98,9 @@ body {
     background-position: center;
     width: 600px;
     height: 594px;
+    border: 3px solid gray;
 }
-
-.nright {
-    display: block;
-    float: right;
-    position: relative;
-}
-
-.nright h2 {
+.nright h3 {
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
@@ -132,6 +126,7 @@ body {
 }
 /*boton compra*/
 .compra {
+    width: 180px;
     position: relative;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -141,13 +136,11 @@ body {
     text-transform: uppercase;
     border-radius: 8em;
     transition: all .2s;
-    font-weight: 400%;
     background-color: rgb(107, 12, 12);
     letter-spacing: 2px;
     border: 3px solid white;
-    left: 805px;
-    bottom: 50%;
-
+    left: 1000px;
+    bottom: 300px;
 }
 
 .compra a {
@@ -187,8 +180,10 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
-
-@media only screen and (min-width: 0) and (max-width:576px) {
+@media (min-width: 0) and (max-width:576px) {
+    .titulo{
+        margin-top: 60px;
+    }
     .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
@@ -198,6 +193,22 @@ body {
     #contact{
         margin-top: 300px;
     }
+}
+.d-block{
+    height: 700px;
+}
+.carousel-caption a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #645c5c;
+    font-weight: bold;
+    box-shadow: 0 0 50px black;
+}
+.carousel-caption p{
+    font-size: 40px;
+    text-decoration: none;
+    color: #c5c0c0;
+    font-weight: bold;
 }
 #contact {
     margin-top: 0.5px;

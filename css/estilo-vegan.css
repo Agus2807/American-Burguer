@@ -94,22 +94,16 @@ body {
     position: relative;
     width: 600px;
     height: 593px;
-}
-.nright {
-    display: block;
-    float: right;
-    position: relative;
-    padding-top: 5px;
-    margin-left: 5px;
+    border: 3px solid gray;
 }
 .nright h4 {
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
+    position: relative;
     font-weight: bold;
 }
-
 .nright u {
     font-size: 28px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -117,9 +111,9 @@ body {
     text-shadow: 0 0 5px black;
     position: relative;
     text-decoration: none;
-    left: 200px;
-    top: 50px;
     font-weight: bold;
+    left: 250px;
+    top: 50px;
 }
 /*boton compra*/
 .compra {
@@ -136,8 +130,8 @@ body {
     background-color: rgb(107, 12, 12);
     letter-spacing: 2px;
     border: 3px solid white;
-    left: 800px;
-    bottom: 50%;
+    left: 850px;
+    bottom: 60%;
 
 }
 
@@ -179,6 +173,9 @@ body {
     opacity: 0;
 }
 @media only screen and (min-width: 0) and (max-width:576px) {
+    .titulo{
+        margin-top: 60px;
+    }
     .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
@@ -188,6 +185,22 @@ body {
     #contact{
         margin-top: 300px;
     }
+}
+.d-block{
+    height: 700px;
+}
+.carousel-caption a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #645c5c;
+    font-weight: bold;
+    box-shadow: 0 0 50px black;
+}
+.carousel-caption p{
+    font-size: 40px;
+    text-decoration: none;
+    color: #c5c0c0;
+    font-weight: bold;
 }
 #contact {
     margin-top: 0.5px;

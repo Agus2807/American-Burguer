@@ -107,8 +107,66 @@ iframe {
 .card-text {
     color: white;
 }
+.volver{
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 1em;
+    transition: all .2s;
+    background-color: rgb(107, 12, 12);
+    letter-spacing: 8px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.volver a{
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.volver:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+
+.volver:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.volver::after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.volver::after {
+    background-color: rgb(107, 12, 12);
+}
+
+.volver:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
 
 @media (min-width: 0) and (max-width: 580px) {
+    .titulo {
+        margin-top: 60px;
+    }
+    .container-fluid {
+        height: 220px !important;
+        width: 100%;
+    }
     .card-body {
         width: 100%;
         height: 610px;
@@ -117,11 +175,11 @@ iframe {
     }
 
     iframe {
-        width: 345px;
+        width: 340px;
     }
 }
 
-@media only screen and (min-width: 0) and (max-width:576px) {
+@media (min-width: 0) and (max-width:576px) {
     .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
@@ -131,6 +189,25 @@ iframe {
     #contact{
         margin-top: 300px;
     }
+}
+.d-block{
+    height: 700px;
+}
+.carousel-caption a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #645c5c;
+    font-weight: bold;
+    box-shadow: 0 0 50px black;
+}
+.carousel-caption p{
+    font-size: 40px;
+    text-decoration: none;
+    color: #c5c0c0;
+    font-weight: bold;
+}
+.carousel-caption a:hover{
+    color: #645c5c;
 }
 #contact {
     margin-top: 0.5px;

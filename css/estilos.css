@@ -92,7 +92,7 @@ h1 {
     color: white;
     text-shadow: 0 0 5px black;
     position: relative;
-    top: 180px;
+    top: 280px;
     font-family: Arial, Helvetica, sans-serif;
     opacity: 0.75;
     cursor: default;
@@ -145,19 +145,19 @@ h1 {
     transform: scale(1.08);
 }
 
-@media only screen and (min-width: 0) and (max-width:576px) {
+@media (min-width: 0) and (max-width:576px) {
     .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
         justify-content: center !important;
         
     }
-    #contact{
-        margin-top: 1300px;
+    #contact {
+        padding-top: 270%;
     }
 }
 #contact {
-    margin-top: 300px;
+    margin-top: 275px;
 }
 h2 {
     top: 10px;
@@ -505,8 +505,8 @@ footer {
     background-color: #500e0e;
     color: #f5f5f5;
     position: fixed;
-    right: 60px;
-    bottom: 70px;
+    right: 40px;
+    bottom: 60px;
     font-size: 25px;
     text-align: center;
     line-height: 50px;
