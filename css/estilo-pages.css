@@ -1,12 +1,12 @@
 body {
     background-image: url(../img/fondo\ american.jpg);
-    background-size: cover;
-    background-attachment: fixed;
     background-position: center;
+    background-size: cover;
 }
+
 .navbar {
-    height: 170px;
-    background-image: url(/img/fondo\ american.jpg);
+    height: 150px;
+    background-image: url(../img/fondo\ american.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -15,7 +15,6 @@ body {
     background-color: rgba(255, 255, 255, 0.842);
     height: 220px;
 }
-
 .img-navbar {
     height: 150px;
     margin-top: 10px;
@@ -77,6 +76,7 @@ body {
 }
 
 .titulo {
+    top: 30px;
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -84,20 +84,22 @@ body {
     color: rgb(255, 255, 255);
     background-color: #5f0000;
     border: 2px solid white;
+
 }
 .card {
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 .card-body {
     width: 1900px;
-    height: 680px;
+    height: 580px;
     background-color: #5f0000;
     border: 2px solid gray;
 }
 
 iframe {
-    width: 760px;
+    width: 40%;
+    display: flex;
 }
 
 .card-title {
@@ -107,58 +109,6 @@ iframe {
 .card-text {
     color: white;
 }
-.volver{
-    width: 200px;
-    margin-top: 10px;
-    margin-right: 20px;
-    letter-spacing: 2px;
-    padding: 5px;
-    text-transform: uppercase;
-    border-radius: 1em;
-    transition: all .2s;
-    background-color: rgb(107, 12, 12);
-    letter-spacing: 8px;
-    border: 2px solid rgb(255, 255, 255);
-}
-.volver a{
-    text-decoration: none;
-    color: rgb(255, 255, 255) !important;
-    font-weight: bold !important;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.volver:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgb(0, 0, 0);
-}
-
-.volver:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.volver::after {
-    content: "🍔";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.volver::after {
-    background-color: rgb(107, 12, 12);
-}
-
-.volver:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
 @media (min-width: 0) and (max-width: 580px) {
     .titulo {
         margin-top: 60px;
@@ -175,7 +125,7 @@ iframe {
     }
 
     iframe {
-        width: 340px;
+        width: 340px;  
     }
 }
 
@@ -190,25 +140,46 @@ iframe {
         margin-top: 300px;
     }
 }
+#demo{
+    height: 100%;
+}
 .d-block{
     height: 700px;
 }
 .carousel-caption a{
     font-size: 40px;
     text-decoration: none;
-    color: #645c5c;
+    background-color: #ffffff62;
+    color: #000000;
     font-weight: bold;
     box-shadow: 0 0 50px black;
+    text-transform: uppercase;
+    border-radius: 3em;
+    transition: all .2s;
 }
+.carousel-caption a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.473);
+    color: #000000;
+}
+
+.carousel-caption a:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
+}
+
 .carousel-caption p{
     font-size: 40px;
     text-decoration: none;
-    color: #c5c0c0;
+    background-color: #ffffff52;
+    color: #000000;
     font-weight: bold;
-}
-.carousel-caption a:hover{
-    color: #645c5c;
-}
+    text-transform: uppercase;
+    box-shadow: 0 0 50px black;
+    border-radius: 3em;
+    width: 15%;
+    margin-left: 570px;
+}    
 #contact {
     margin-top: 0.5px;
 }
