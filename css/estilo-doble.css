@@ -32,7 +32,7 @@ body {
     text-transform: uppercase;
     border-radius: 1em;
     transition: all .2s;
-    background-color: rgb(107, 12, 12);
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     letter-spacing: 8px;
     border: 2px solid rgb(255, 255, 255);
 }
@@ -80,14 +80,14 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     color: rgb(255, 255, 255);
-    background-color: #5f0000;
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     border: 2px solid white;
 }
 /*seccion de compra*/
 .conteiner {
     height: 600px;
     width: 100%;
-    background-color: #5f0000;
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     border: 3px solid gray;
     margin-top: 5px;
 }
@@ -129,7 +129,7 @@ body {
     border-radius: 8em;
     transition: all .2s;
     font-weight: 400%;
-    background-color: rgb(107, 12, 12);
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     letter-spacing: 2px;
     border: 3px solid white;
     left: 710px;
@@ -233,7 +233,7 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
     color: rgb(255, 255, 255);
-    background-color: #5f0000;
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     border: 2px solid white;
 }
 .formulario {
@@ -245,7 +245,7 @@ h2 {
     margin-bottom: 1%;
 }
 .btn-info {
-    background-color: #5e1515;
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     color: white;
     height: 50px;
     width: 120px !important;
@@ -380,7 +380,7 @@ footer {
     transition: all .2s;
     font-family: inherit;
     color: rgb(255, 255, 255);
-    background-color: rgb(107, 12, 12);
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 3px solid white;
     font-weight: bold;
@@ -564,7 +564,7 @@ footer {
 .subir {
     height: 50px;
     width: 50px !important;
-    background-color: #500e0e;
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     color: #f5f5f5;
     position: fixed;
     right: 60px;
