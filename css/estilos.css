@@ -253,7 +253,7 @@ h2 {
 
 footer {
     position: relative;
-    background-color: var(--footer-background);
+    background-color: white;
     min-width: 300px;
     width: 100vw;
     bottom: 0px;
@@ -264,12 +264,10 @@ footer {
 
 .footer-wrapper {
     display: flex;
-    background: var(--footer-background);
     flex-direction: column;
     max-width: 1320px;
     padding: 16px;
 }
-
 
 /*? top section */
 .footer-top {
