@@ -84,7 +84,6 @@ body {
     color: rgb(255, 255, 255);
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     border: 2px solid white;
-
 }
 .card {
     margin-top: 30px;
@@ -129,12 +128,20 @@ iframe {
     }
 }
 
-@media (min-width: 0) and (max-width:576px) {
+@media (min-width: 0) and (max-width:580px) {
     .navbar-collapse {
-        background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
         justify-content: center !important;
-        
+        position: relative;
+        z-index: 9999;   
+    }
+    .nav-link::after {
+        background-color: transparent;
+    }
+    .carrito{
+        position: relative;
+        z-index: 9999; 
+        margin-left: 310px;    
     }
     #contact{
         margin-top: 300px;
@@ -166,20 +173,7 @@ iframe {
 .carousel-caption a:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
-}
-
-.carousel-caption p{
-    font-size: 40px;
-    text-decoration: none;
-    background-color: #ffffff52;
-    color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 50px black;
-    border-radius: 3em;
-    width: 15%;
-    margin-left: 570px;
-}    
+}   
 #contact {
     margin-top: 0.5px;
 }
@@ -515,6 +509,9 @@ footer {
         align-items: space-between;
         justify-content: center;
         margin: 0 auto;
+    }
+    .subir{
+        top: 420px;
     }
 }
 .subir {

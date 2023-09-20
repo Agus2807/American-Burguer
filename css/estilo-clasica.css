@@ -185,10 +185,17 @@ body {
         margin-top: 60px;
     }
     .navbar-collapse {
-        background-color: rgba(255, 255, 255, 0.829) !;
         display: flex;
-        justify-content: center !important;
-        
+        position: relative;
+        z-index: 9999;   
+    }
+    .nav-link::after {
+        background-color: transparent;
+    }
+    .carrito{
+        position: relative;
+        z-index: 9999; 
+        margin-left: 310px;    
     }
     #contact{
         margin-top: 300px;
@@ -218,18 +225,6 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
 }
 
-.carousel-caption p{
-    font-size: 40px;
-    text-decoration: none;
-    background-color: #ffffff52;
-    color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 50px black;
-    border-radius: 3em;
-    width: 15%;
-    margin-left: 570px;
-}    
 #contact {
     margin-top: 0.5px;
 }
