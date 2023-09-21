@@ -320,7 +320,7 @@ h2 {
 
 footer {
     position: relative;
-    background-color: var(--footer-background);
+    background-image: linear-gradient(to top right, rgb(255, 255, 255) 50%, rgb(133, 18, 18));
     min-width: 300px;
     width: 100vw;
     bottom: 0px;
@@ -331,7 +331,6 @@ footer {
 
 .footer-wrapper {
     display: flex;
-    background: var(--footer-background);
     flex-direction: column;
     max-width: 1320px;
     padding: 16px;
