@@ -5,7 +5,7 @@ body {
     background-position: center;
 }
 .navbar {
-    height: 170px;
+    height: 150px;
     background-image: url(/img/fondo\ american.jpg);
     background-position: center;
     background-size: cover;
@@ -13,12 +13,11 @@ body {
 
 .container-fluid {
     background-color: rgba(255, 255, 255, 0.842);
-    height: 220px;
+    height: 170px;
 }
 
 .img-navbar {
     height: 150px;
-    margin-top: 10px;
 }
 .nav-link {
     width: 200px;
@@ -89,7 +88,7 @@ body {
     width: 100%;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     border: 3px solid gray;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 .nleft .doble {
     background-size: cover;

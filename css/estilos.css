@@ -13,14 +13,12 @@ body {
 
 .container-fluid {
     background-color: rgba(255, 255, 255, 0.842);
-    height: 220px;
+    height: 170px;
 }
 
 .img-navbar {
     height: 150px;
-    margin-top: 10px;
 }
-
 
 .nav-link {
     width: 200px;
@@ -81,7 +79,8 @@ body {
 
 .jumbotron {
     background-image: url(../img/imagen\ seccion.jpg);
-    height: 750px;
+    height: 700px;
+    margin-top: 18px;
     background-position: center;
     background-size: cover;
 }
@@ -106,7 +105,6 @@ h1 {
     width: 100%;
 }
 h2 {
-    top: 10px;
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -117,7 +115,7 @@ h2 {
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
 }
 .container-fluid {
-    margin-top: 13px;
+    margin-top: 10px;
 }
 .clasica {
     background-image: url(../img/Clasica.png);
@@ -174,10 +172,9 @@ h2 {
     }
 }
 #contact {
-    margin-top: 275px;
+    margin-top: 340px;
 }
 .formulario {
-    height: 100%;
     background-color: #000000b2;
 }
 .form-control{

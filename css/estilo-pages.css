@@ -13,11 +13,10 @@ body {
 
 .container-fluid {
     background-color: rgba(255, 255, 255, 0.842);
-    height: 220px;
+    height: 170px;
 }
 .img-navbar {
     height: 150px;
-    margin-top: 10px;
 }
 .nav-link {
     width: 200px;
@@ -76,7 +75,7 @@ body {
 }
 
 .titulo {
-    top: 30px;
+    top: 10px;
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -86,7 +85,7 @@ body {
     border: 2px solid white;
 }
 .card {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .card-body {
