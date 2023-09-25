@@ -157,13 +157,17 @@ h2 {
 }
 
 @media (min-width: 0) and (max-width:580px) {
+    .container-fluid {
+        height: 200px;
+        margin-top: 0;
+    }
     .navbar-collapse {
         display: flex;
         justify-content: center !important;
     }
     .carrito{
         position: relative;
-        z-index: 9999; 
+        z-index: 9; 
         bottom: 10px;
         margin-left: 310px;
     }
@@ -232,6 +236,7 @@ h2 {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 
