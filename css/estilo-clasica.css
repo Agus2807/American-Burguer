@@ -96,10 +96,10 @@ body {
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 60px !important;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     border: 2px solid white;
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
 }
 /*seccion de compra*/
 .conteiner-fluid{

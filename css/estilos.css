@@ -136,13 +136,12 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px !important;
     color: rgb(255, 255, 255);
-    background-color: #5f0000;
     border: 2px solid white;
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0)); 
 }
 .container-fluid-x {
     height: 200px;  
-    margin-top: 50px;  
+    margin-top: 10px;  
 }
 .clasica {
     background-image: url(../img/Clasica.png);
