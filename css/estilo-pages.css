@@ -17,7 +17,25 @@ body {
 }
 .img-navbar {
     height: 150px;
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
 }
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        /*transform: translate(800px, 800px)
+        rotate*/
+}
+}
+
 .nav-link {
     width: 200px;
     margin-top: 10px;
