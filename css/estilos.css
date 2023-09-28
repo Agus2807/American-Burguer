@@ -153,7 +153,6 @@ h2 {
 .clasica:hover{
     transform: scale(1.08);
 }
-
 .doble{
     background-image: url(../img/Doble.jpeg);
     background-position: center;
@@ -165,8 +164,6 @@ h2 {
 .doble:hover{
     transform: scale(1.08);
 }
-
-
 .vegan{
     background-image: url(../img/Vegetariana.png);
     background-position: center;
