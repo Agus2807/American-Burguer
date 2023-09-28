@@ -104,13 +104,10 @@ body {
 }
 .card {
     margin-top: 10px;
-}
-
-.card-body {
-    width: 1900px;
-    height: 580px;
-    background-image: linear-gradient(rgb(163, 0, 0) , #5f0000);
-    border: 2px solid gray;
+        width: 1900px;
+        height: 580px;
+        background-image: linear-gradient(rgb(163, 0, 0) , #5f0000);
+        border: 5px solid gray;
 }
 
 iframe {
@@ -125,6 +122,10 @@ iframe {
 .card-text {
     color: white;
 }
+h5{
+    color: white;
+}
+
 @media (min-width: 0) and (max-width: 580px) {
     .titulo {
         margin-top: 60px;

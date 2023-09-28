@@ -31,8 +31,6 @@ body {
     }
     100%{
         opacity: 1;
-        /*transform: translate(800px, 800px)
-        rotate*/
 }
 }
 .nav-link {
