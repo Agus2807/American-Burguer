@@ -91,16 +91,16 @@ body {
 
 .jumbotron {
     background-image: url(../img/imagen\ seccion.jpg);
-    height: 400px;
+    height: 500px;
     margin-top: 10px;
     background-position: center;
     background-size: cover;
     transition: height 2.7s;
+    border: 3px solid grey;
 }
 .jumbotron:hover{
-    height: 600px;
+    height: 700px;
 }
-
 h1 {
     font-family: sans-serif;
     text-transform: uppercase;
@@ -127,6 +127,7 @@ h1 {
 #menu{
     height: 100%;
     width: 100%;
+    margin-top: 360px;
 }
 h2 {
     position: relative;
@@ -137,45 +138,62 @@ h2 {
     border: 2px solid white;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0)); 
 }
-.container-fluid-x {
-    height: 200px;  
-    margin-top: 10px;  
-}
-.clasica {
+.clasica{
     background-image: url(../img/Clasica.png);
     background-position: center;
     background-size: cover;
     border: 3px solid grey;
-    height: 500px;
+    height: 700px;
+    width: 40%;
     border-radius: 15px;
-    transition: all 0.9s;
+    margin-top: 50px;
+    margin-left: 20px;
+    transition: all 0.9s !important;
 }
 .clasica:hover{
-    transform: scale(1.08);
+    transform: scale(1.08) !important;
 }
 .doble{
-    background-image: url(../img/Doble.jpeg);
+    background-image: url(/img/Doble.jpeg);
     background-position: center;
     background-size: cover;
     border: 3px solid grey;
-    height: 500px;
-    transition: all 0.9s;
+    height: 600px;
+    width: 40%;
+    border-radius: 15px;
+    margin-right: 20px;
+    float: right;
+    transition: all 0.9s !important;
 }
 .doble:hover{
-    transform: scale(1.08);
+    transform: scale(1.08) !important;
 }
 .vegan{
-    background-image: url(../img/Vegetariana.png);
+    background-image: url(/img/Vegetariana.png);
     background-position: center;
     background-size: cover;
     border: 3px solid grey;
-    height: 500px;
-    transition: all 0.9s;
+    height: 600px;
+    width: 40%;
+    border-radius: 15px;
+    margin-top: 620px;
+    margin-left: 20px;
+    transition: all 0.9s !important;
 }
 .vegan:hover{
-    transform: scale(1.08);
+    transform: scale(1.08) !important;
 }
-
+@media (max-width:700px){
+    .clasica{
+        width: 100%;
+    }
+    .doble{
+        width: 100%;
+    }
+    .vegan{
+        width: 100%;
+    }
+}
 @media (max-width:700px) {
     .container-fluid {
         height: 200px;
@@ -196,7 +214,7 @@ h2 {
     }
 }
 #contact {
-    margin-top: 340px;
+    margin-top: 80px;
 }
 .formulario {
     background-color: #000000b2;
@@ -242,16 +260,10 @@ h2 {
     z-index: -1;
     transition: all .4s;
 }
-
-.btn-info::after {
-    background-color: rgb(107, 12, 12);
-}
-
 .btn-info:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
-
 .comment {
     color: rgb(255, 255, 255);
     font-weight: bold;
