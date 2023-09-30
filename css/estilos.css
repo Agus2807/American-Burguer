@@ -7,6 +7,11 @@ font-family: 'Playfair Display', serif;
 font-family: 'REM', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
     background-image: url(../img/fondo\ american.jpg);
     background-position: center;
@@ -269,17 +274,30 @@ a{
 }
 @media (max-width:700px){
     .clasica{
-        width: 100%;
-        margin-left: 0;
+        height: 30%;
+        width: 95%;
+        margin-left: 2%;
+    }
+    .clasica .texto{
+        top: 225px;
     }
     .doble{
-        width: 100%;
-        margin-right: 0;
+        margin-top: 100px;
+        height: 30%;
+        width: 95%;
+        margin-right: 2%;
+    }
+    .doble .texto{
+        top: 225px;
     }
     .vegan{
-        width: 100%;
-        margin-left: 0;
+        height: 30%;
+        width: 95%;
+        margin-left: 2%;
     }
+    .vegan .texto{
+        top: 225px;
+        }
 }
 @media (max-width:700px) {
     .img-navbar{
@@ -327,13 +345,26 @@ a{
 }
 #contact {
     margin-top: 80px;
-}
-.formulario {
     background-color: #000000cb;
 }
+.formulario {
+    height: 550px;
+    border: 1px solid rgba(37, 37, 37, 0.63);
+}
 .form-control{
-    height: 250px;
+    height: 45px !important;
+    width: 50% !important;
     margin-bottom: 1%;
+    margin-left: 10px;
+}
+.form-control-x{
+    height: 250px !important;
+    border-radius: 20px !important;
+    margin-left: 20px;
+    width: 50% !important;
+}
+.indicador{
+    margin-left: 20px;
 }
 .btn-info {
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
@@ -341,7 +372,7 @@ a{
     height: 50px;
     width: 120px !important;
     margin-left: 2%;
-    margin-bottom: 1%;
+    margin-top: 10px !important;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif !important;
     font-weight: bold !important;
@@ -377,30 +408,22 @@ a{
     opacity: 0;
 }
 .comment {
+    margin-left: 10px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
-:root {
-    --footer-background: white;
-    --text-color: #111420;
-    --text-gray: #e1e1e1;
-    --text-heading-gray: #b9b9b9;
-}
 /*? footer reset */
-*,
 *::after,
 *::before {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
 footer {
     position: relative;
     background-image: linear-gradient(to top right, rgb(255, 255, 255) 50%, rgb(133, 18, 18));
@@ -447,15 +470,21 @@ footer {
 .footer-subscribe>input {
     border: 1px solid var(--text-gray);
     color: var(--text-color);
+    margin-top: 20px;
+    margin-left: 15px;
     min-height: 36px;
+    max-height: 50px;
     font-size: 1.2rem;
     flex: 1 0 120px;
-    padding: 8px 12px;
+    padding: 25px 12px;
     border-radius: 8px;
 }
 
 .footer-subscribe>button {
     position: relative;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 15px;
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -506,6 +535,19 @@ footer {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
+.register-link a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    top: 20px;
+  }
+  
+  .register-link a:hover {
+    color: rgb(255, 255, 255);
+    transition: .4s;
+  }
 
 /*? footer columns */
 .footer-columns {
@@ -602,6 +644,9 @@ footer {
 /*? mobile */
 
 @media (max-width: 800px) {
+    .footer-subscribe>button {
+        margin-left: 95px;
+    }
     .footer-top {
         display: flex;
         flex-direction: column;
@@ -618,8 +663,8 @@ footer {
         margin: 0 auto;
     }
     .subir{
-        top: 460px;
-        margin-right: 100px;
+        top: 450px;
+        margin-right: 67px;
     }
 }
 .subir {

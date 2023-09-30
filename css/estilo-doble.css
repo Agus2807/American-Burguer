@@ -236,14 +236,11 @@ body {
     .conteiner-fluid-x{
         height: 680px;
     }
-    #contact{
-        margin-top: 300px;
-    }
     .carousel-caption a{
         font-size: 20px !important;
     }
     .d-block{
-        height: 680px !important;
+        height: 500px !important;
     }
 }
 .d-block{
@@ -268,10 +265,7 @@ body {
 .carousel-caption a:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
-}  
-#contact {
-    margin-top: 0.5px;
-}
+} 
 h2 {
     position: relative;
     text-align: center;
@@ -281,13 +275,24 @@ h2 {
     border: 2px solid rgb(0, 0, 0);
     background-image: linear-gradient(#5f0000 , rgb(0, 0, 0));
 }
+#contact {
+    background-color: #000000cb;
+}
 .formulario {
-    height: 100%;
-    background-color: #000000b2;
+    height: 550px;
+    border: 1px solid rgba(37, 37, 37, 0.63);
 }
 .form-control{
-    height: 250px;
+    height: 45px !important;
+    width: 50% !important;
     margin-bottom: 1%;
+    margin-left: 10px;
+}
+.form-control-x{
+    height: 250px !important;
+    border-radius: 20px !important;
+    margin-left: 20px;
+    width: 50% !important;
 }
 .btn-info {
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
@@ -406,15 +411,21 @@ footer {
 .footer-subscribe>input {
     border: 1px solid var(--text-gray);
     color: var(--text-color);
+    margin-top: 20px;
+    margin-left: 15px;
     min-height: 36px;
+    max-height: 50px;
     font-size: 1.2rem;
     flex: 1 0 120px;
-    padding: 8px 12px;
+    padding: 25px 12px;
     border-radius: 8px;
 }
 
 .footer-subscribe>button {
     position: relative;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 15px;
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -465,6 +476,20 @@ footer {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
+.register-link a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    top: 20px;
+  }
+  
+  .register-link a:hover {
+    color: rgb(255, 255, 255);
+    transition: .4s;
+  }
+
 
 /*? footer columns */
 .footer-columns {
@@ -589,6 +614,9 @@ footer {
 /*? mobile */
 
 @media (max-width: 800px) {
+    .footer-subscribe>button {
+        margin-left: 95px;
+    }
     .footer-top {
         display: flex;
         flex-direction: column;

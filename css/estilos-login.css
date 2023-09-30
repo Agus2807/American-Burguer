@@ -33,8 +33,9 @@ h1 span {
 .casilla input:hover {
   border: 1px solid #ff1c1c;
   background-color: black;
-  width: 20%;
+  width: 400px;
   border-radius: 10px;  
+  color: white;
 }
 .casilla input::placeholder {
 color: #ffffff;
