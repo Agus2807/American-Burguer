@@ -99,7 +99,7 @@ body {
     background-image: linear-gradient(rgb(163, 0, 0), #5f0000);
 }
 /*seccion de compra*/
-.conteiner-fluid {
+.conteiner-fluid-x {
     height: 600px;
     width: 100%;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
@@ -189,8 +189,31 @@ body {
     opacity: 0;
 }
 @media (max-width:580px) {
-    .conteiner-fluid{
-        height: 670px;
+    .img-navbar{
+        height: 100px;
+        margin-left: 85px;
+        margin-top: 20px;
+    }
+    .container-fluid {
+        height: 150px;
+    }
+    .nav-link::after {
+        content: "";
+        background-color: rgba(107, 12, 12, 0);
+        width: 1%;
+    }
+    .navbar-collapse {
+        display: flex;
+        z-index: 1;
+    }
+    .navbar-toggler-icon{
+        background-color: #4442425e;
+        border-radius: 5px;
+    }
+    .carrito{
+        position: relative;
+        z-index: 9;
+        bottom: 80px;
     }
     .nleft .doble{
         width: 100%;
@@ -208,21 +231,10 @@ body {
         left: 85px;
     }
     .titulo{
-        margin-top: 10px;
+        font-size: 39px !important;
     }
-    .navbar-collapse {
-        display: flex;
-        position: relative;
-        z-index: 9999;   
-    }
-    .nav-link::after {
-        background-color: transparent;
-    }
-    .carrito{
-        position: relative;
-        z-index: 9; 
-        margin-left: 310px;
-        bottom: 50px; 
+    .conteiner-fluid-x{
+        height: 680px;
     }
     #contact{
         margin-top: 300px;
@@ -231,7 +243,7 @@ body {
         font-size: 20px !important;
     }
     .d-block{
-        height: 500px !important;
+        height: 680px !important;
     }
 }
 .d-block{

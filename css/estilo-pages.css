@@ -130,8 +130,8 @@ aside{
 
 @media (max-width: 580px) {
     .titulo {
-        margin-top: 60px;
-    }
+        font-size: 50px !important;
+    } 
     .container-fluid {
         height: 220px !important;
         width: 100%;
@@ -152,20 +152,31 @@ aside{
 }
 
 @media (max-width:580px) {
-    .navbar-collapse {
-        display: flex;
-        justify-content: center !important;
-        position: relative;
-        z-index: 9999;   
+    .img-navbar{
+        height: 100px;
+        margin-left: 85px;
+        margin-top: 20px;
+    }
+    .container-fluid {
+        height: 150px !important;
     }
     .nav-link::after {
-        background-color: transparent;
+        content: "";
+        background-color: rgba(107, 12, 12, 0);
+        width: 1%;
+    }
+    .navbar-collapse {
+        display: flex;
+        z-index: 1;
+    }
+    .navbar-toggler-icon{
+        background-color: #4442425e;
+        border-radius: 5px;
     }
     .carrito{
         position: relative;
-        z-index: 9999; 
-        margin-left: 300px;
-        margin-bottom: 20px;    
+        z-index: 9;
+        bottom: 80px;
     }
     #contact{
         margin-top: 300px;   

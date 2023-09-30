@@ -23,7 +23,6 @@ body {
     background-color: rgba(255, 255, 255, 0.842);
     height: 170px;
 }
-
 .img-navbar {
     height: 150px;
     animation-duration: 1.5s;
@@ -97,7 +96,6 @@ body {
     margin-top: 8px;
     background-color: transparent;
 }
-
 .jumbotron {
     background-image: url(../img/imagen\ seccion.jpg);
     height: 300px;
@@ -284,6 +282,32 @@ a{
     }
 }
 @media (max-width:700px) {
+    .img-navbar{
+        height: 100px;
+        margin-left: 85px;
+        margin-top: 20px;
+    }
+    .container-fluid {
+        height: 150px;
+    }
+    .nav-link::after {
+        content: "";
+        background-color: rgba(107, 12, 12, 0);
+        width: 1%;
+    }
+    .navbar-collapse {
+        display: flex;
+        z-index: 1;
+    }
+    .navbar-toggler-icon{
+        background-color: #4442425e;
+        border-radius: 5px;
+    }
+    .carrito{
+        position: relative;
+        z-index: 9;
+        bottom: 80px;
+    }
     .jumbotron{
         height: 500px;
         z-index: 0;
@@ -296,25 +320,6 @@ a{
     }
     #menu{
         margin-top: 50px;
-    }
-    .container-fluid {
-        height: 200px;
-        margin-top: 0;
-    }
-    .nav-link::after {
-        content: "";
-        background-color: rgba(107, 12, 12, 0);
-        width: 1%;
-    }
-    .navbar-collapse {
-        display: flex;
-        z-index: 1;
-    }
-    .carrito{
-        position: relative;
-        z-index: 9; 
-        bottom: 10px;
-        margin-left: 300px;
     }
     #contact {
         padding-top: 10%;
