@@ -5,7 +5,7 @@ body {
     background-position: center;
 }
 .navbar {
-    height: 150px;
+    height: 160px;
     background-image: url(/img/fondo\ american.jpg);
     background-position: center;
     background-size: cover;
@@ -98,15 +98,13 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px !important;
     color: rgb(255, 255, 255);
-    border: 2px solid white;
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
+    background-image: linear-gradient(rgb(163, 0, 0), #5f0000);
 }
 /*seccion de compra*/
 .conteiner-fluid{
     height: 600px;
     width: 100%;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
-    border: 3px solid gray;
     margin-top: 2px;
 }
 
@@ -139,6 +137,7 @@ body {
     color: aliceblue;
     text-shadow: 0 0 5px black;
     padding-top: 5%;
+    padding-left: 30px;
 }
 /*boton compra*/
 .compra {
@@ -206,8 +205,11 @@ body {
     .nright {
         text-align: center;   
     }
+    .nright p{
+       padding-right: 30px;
+    }
     .titulo{
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .navbar-collapse {
         display: flex;
@@ -226,19 +228,25 @@ body {
     #contact{
         margin-top: 300px;
     }
+    .carousel-caption a{
+        font-size: 20px !important;
+    }
+    .d-block{
+        height: 500px !important;
+    }
 }
 .d-block{
     height: 700px;
 }
 .carousel-caption a{
-    font-size: 40px;
+    font-size: 35px;
+    border-radius: 10px;
     text-decoration: none;
     background-color: #ffffff62;
     color: #000000;
     font-weight: bold;
     box-shadow: 0 0 50px black;
     text-transform: uppercase;
-    border-radius: 3em;
     transition: all .2s;
 }
 .carousel-caption a:hover {
@@ -258,14 +266,14 @@ h2 {
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 60px !important;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
+    background-image: linear-gradient(#5f0000 , rgb(0, 0, 0)); 
 }
 .formulario {
     height: 100%;
-    background-color: #000000b2;
+    background-color: #000000bc;
 }
 .form-control{
     height: 250px;

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Oswald:wght@200&family=Playfair+Display:ital,wght@1,600&family=REM:wght@300&family=Roboto:wght@100&display=swap');
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'REM', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
 body {
     background-image: url(../img/fondo\ american.jpg);
     background-position: center;
@@ -91,7 +100,7 @@ body {
 
 .jumbotron {
     background-image: url(../img/imagen\ seccion.jpg);
-    height: 500px;
+    height: 300px;
     margin-top: 10px;
     background-position: center;
     background-size: cover;
@@ -100,6 +109,21 @@ body {
 }
 .jumbotron:hover{
     height: 700px;
+}
+.jumbotron1 {
+    background-image: url(/img/depositphotos_286856430-stock-photo-tasty-burger-with-french-fries.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(0, 0, 0);
+}
+h3{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-top: 100px;
+    width: 40%;
+    color: white;
+    text-shadow: 5px 5px 5px #000000;
 }
 h1 {
     font-family: sans-serif;
@@ -127,7 +151,6 @@ h1 {
 #menu{
     height: 100%;
     width: 100%;
-    margin-top: 360px;
 }
 h2 {
     position: relative;
@@ -135,8 +158,8 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px !important;
     color: rgb(255, 255, 255);
-    border: 2px solid white;
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0)); 
+    border: 2px solid rgb(0, 0, 0);
+    background-image: linear-gradient(#5f0000 , rgb(0, 0, 0)); 
 }
 .clasica{
     background-image: url(../img/Clasica.png);
@@ -147,29 +170,69 @@ h2 {
     width: 40%;
     border-radius: 15px;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 100px;
     transition: all 0.9s !important;
 }
 .clasica:hover{
     transform: scale(1.08) !important;
 }
+.clasica .texto{
+    position: relative;
+    height: 450px;
+    left: 50%;
+    top: 32.5%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945) , rgba(0, 0, 0, 0.048));
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.clasica:hover .texto{
+    opacity: 1;
+}
 .doble{
-    background-image: url(/img/Doble.jpeg);
+    background-image: url(../img/Doble.jpeg);
     background-position: center;
     background-size: cover;
     border: 3px solid grey;
     height: 600px;
     width: 40%;
     border-radius: 15px;
-    margin-right: 20px;
+    margin-right: 100px;
     float: right;
     transition: all 0.9s !important;
 }
 .doble:hover{
     transform: scale(1.08) !important;
 }
+.doble .texto{
+    position: relative;
+    height: 450px;
+    left: 50%;
+    top: 37.7%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945) , rgba(0, 0, 0, 0.048));
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.doble:hover .texto{
+    opacity: 1;
+}
 .vegan{
-    background-image: url(/img/Vegetariana.png);
+    background-image: url(../img/Vegetariana.png);
     background-position: center;
     background-size: cover;
     border: 3px solid grey;
@@ -177,11 +240,31 @@ h2 {
     width: 40%;
     border-radius: 15px;
     margin-top: 620px;
-    margin-left: 20px;
+    margin-left: 100px;
     transition: all 0.9s !important;
 }
 .vegan:hover{
     transform: scale(1.08) !important;
+}
+.vegan .texto{
+    position: relative;
+    height: 450px;
+    left: 50%;
+    top: 37.8%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945) , rgba(0, 0, 0, 0.048));
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.vegan:hover .texto{
+    opacity: 1;
 }
 @media (max-width:700px){
     .clasica{
@@ -200,6 +283,13 @@ h2 {
 @media (max-width:700px) {
     .jumbotron{
         height: 500px;
+        z-index: 0;
+    }
+    .jumbotron1{
+        height: 400px;
+    }
+    h3{
+        width: 100%;
     }
     #menu{
         margin-top: 50px;
@@ -208,9 +298,14 @@ h2 {
         height: 200px;
         margin-top: 0;
     }
+    .nav-link::after {
+        content: "";
+        background-color: rgba(107, 12, 12, 0);
+        width: 1%;
+    }
     .navbar-collapse {
         display: flex;
-        justify-content: center !important;
+        z-index: 1;
     }
     .carrito{
         position: relative;
@@ -226,7 +321,7 @@ h2 {
     margin-top: 80px;
 }
 .formulario {
-    background-color: #000000b2;
+    background-color: #000000cb;
 }
 .form-control{
     height: 250px;
@@ -289,7 +384,6 @@ h2 {
     --text-gray: #e1e1e1;
     --text-heading-gray: #b9b9b9;
 }
-
 /*? footer reset */
 *,
 *::after,
@@ -419,37 +513,6 @@ footer {
     margin: 0 auto;
     border-top: 1px solid var(--text-gray);
 }
-
-.footer-columns ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-columns ul a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-.footer-columns ul a:hover {
-    text-decoration: underline;
-}
-
-.footer-columns ul li {
-    margin-bottom: 16px;
-}
-
-.footer-columns h4 {
-    color: var(--footer-heading-gray);
-    margin-top: 0;
-    margin-bottom: 25px;
-    font-size: 1.125rem;
-}
-
-.footer-centering {
-    margin: 0 auto;
-}
-
 .footer-columns>section {
     min-width: 150px;
 }
@@ -548,7 +611,7 @@ footer {
     }
     .subir{
         top: 460px;
-        margin-right: 20px;
+        margin-right: 100px;
     }
 }
 .subir {
