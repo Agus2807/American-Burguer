@@ -34,6 +34,12 @@ $var2: 50%;
 $ancho: 500px;
 $alto: 200px;
 
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}  
 body {
     background-image: url(../img/fondo\ american.jpg);
     background-size: cover;
@@ -42,13 +48,13 @@ body {
 }
 .navbar {
     height: 160px;
-    background-image: url(/img/fondo\ american.jpg);
+    background-color: $color2;
     background-position: center;
     background-size: cover;
 }
 
 .container-fluid {
-    background-color: rgba(255, 255, 255, 0.842);
+    background-color: $color2;
     height: 170px;
 }
 

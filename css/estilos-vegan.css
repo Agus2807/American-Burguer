@@ -9,6 +9,12 @@ font-family: 'Playfair Display', serif;
 font-family: 'REM', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(../img/fondo\ american.jpg);
   background-size: cover;
@@ -18,7 +24,7 @@ body {
 
 .navbar {
   height: 160px;
-  background-image: url(/img/fondo\ american.jpg);
+  background-color: rgba(255, 255, 255, 0.842);
   background-position: center;
   background-size: cover;
 }

@@ -19,20 +19,36 @@ font-family: 'Playfair Display', serif;
 font-family: 'REM', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
-$color1: linear-gradient(#5f0000 , rgb(163, 0, 0));
+$color1: linear-gradient(#5f0000, rgb(163, 0, 0));
 $color2: rgba(255, 255, 255, 0.842);
-$color3:  rgb(107, 12, 12);
+$color3: rgb(107, 12, 12);
 $color4: grey;
-$font1: Arial, Helvetica, sans-serif;
+$font1: Arial,
+Helvetica,
+sans-serif;
 $font2: sans-serif;
-$font3: 'Montserrat', sans-serif;
-$font4: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font3: 'Montserrat',
+sans-serif;
+$font4: 'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
 
 $var1: 100%;
 $var2: 50%;
 
 $ancho: 500px;
 $alto: 200px;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body {
     background-image: url(../img/fondo\ american.jpg);
@@ -42,14 +58,16 @@ body {
 
 .navbar {
     height: 150px;
-    background-image: url(../img/fondo\ american.jpg);
+    background-color: $color2;
     background-position: center;
     background-size: cover;
 }
+
 .container-fluid {
     background-color: $color2;
     height: 170px;
 }
+
 .img-navbar {
     height: 150px;
     animation-duration: 1.5s;
@@ -57,18 +75,21 @@ body {
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
-@keyframes aparecer{
-    0%{
+
+@keyframes aparecer {
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         transform: translateX(300px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         /*transform: translate(800px, 800px)
         rotate*/
-}
+    }
 }
 
 .nav-link {
@@ -137,27 +158,33 @@ body {
     border: 0px solid #5f0000;
     background-image: linear-gradient(rgb(163, 0, 0), #5f0000);
 }
-.container-fluid-x{
+
+.container-fluid-x {
     margin-top: 12px;
 }
-main{
-    background-image: linear-gradient(#5f0000,rgb(163, 0, 0));
+
+main {
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0));
     height: 550px;
     color: white;
 }
+
 iframe {
     padding-top: 10px;
     padding-left: 10px;
     width: 100%;
 }
-.card-title{
+
+.card-title {
     padding-left: 10px;
 }
-.card-text{
+
+.card-text {
     padding-left: 10px;
 }
-aside{
-    background-image: linear-gradient(#5f0000,rgb(163, 0, 0));
+
+aside {
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0));
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -166,68 +193,82 @@ aside{
 @media (max-width: 580px) {
     .titulo {
         font-size: 50px !important;
-    } 
+    }
+
     .container-fluid {
         height: 220px !important;
         width: 100%;
     }
+
     iframe {
         width: 370px;
     }
-    aside{
+
+    aside {
         margin-left: 2px;
         text-align: center;
         height: 180px;
         transition: height 2.7s;
         background-image: linear-gradient(rgb(163, 0, 0), #5f0000);
     }
-    aside:hover{
+
+    aside:hover {
         height: 800px;
     }
 }
 
 @media (max-width:580px) {
-    .img-navbar{
+    .img-navbar {
         height: 100px;
         margin-left: 85px;
         margin-top: 20px;
     }
+
     .container-fluid {
         height: 150px !important;
     }
+
     .nav-link::after {
         content: "";
         background-color: rgba(107, 12, 12, 0);
         width: 1%;
     }
+
     .navbar-collapse {
         display: flex;
         z-index: 1;
     }
-    .navbar-toggler-icon{
+
+    .navbar-toggler-icon {
         background-color: #4442425e;
         border-radius: 5px;
     }
-    .carrito{
+
+    .carrito {
         position: relative;
         z-index: 9;
         bottom: 80px;
     }
-    .carousel-caption a{
+
+    .carousel-caption a {
         font-size: 20px !important;
     }
-    .d-block{
+
+    .d-block {
         height: 500px !important;
     }
 }
-#demo{
+
+#demo {
     height: 100%;
     border: 2px solid black;
 }
-.d-block{
+
+.d-block {
     height: 700px;
 }
-.carousel-caption a{
+
+.carousel-caption a {
     font-size: 35px;
     text-decoration: none;
     background-color: #ffffff62;
@@ -238,6 +279,7 @@ aside{
     border-radius: 10px;
     transition: all .2s;
 }
+
 .carousel-caption a:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.473);
@@ -248,6 +290,7 @@ aside{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
 }
+
 h2 {
     position: relative;
     text-align: center;
@@ -255,29 +298,34 @@ h2 {
     font-size: 60px !important;
     color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
-    background-image: linear-gradient(#5f0000 , rgb(0, 0, 0)); 
+    background-image: linear-gradient(#5f0000, rgb(0, 0, 0));
 }
+
 #contact {
     background-color: #000000cb;
 }
+
 .formulario {
     height: 550px;
     border: 1px solid rgba(37, 37, 37, 0.63);
 }
-.form-control{
+
+.form-control {
     height: 45px !important;
     width: 50% !important;
     margin-bottom: 1%;
     margin-left: 10px;
 }
-.form-control-x{
+
+.form-control-x {
     height: 250px !important;
     border-radius: 20px !important;
     margin-left: 20px;
     width: 50% !important;
 }
+
 .btn-info {
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0));
     color: white;
     height: 50px;
     width: 120px !important;
@@ -291,6 +339,7 @@ h2 {
     transition: all .2s;
     border: 2px solid rgb(255, 255, 255);
 }
+
 .btn-info:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgb(0, 0, 0);
@@ -328,6 +377,7 @@ h2 {
     font-weight: bold;
     font-size: 20px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 
 :root {
@@ -417,7 +467,7 @@ footer {
     transition: all .2s;
     font-family: inherit;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0));
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 3px solid white;
     font-weight: bold;
@@ -427,6 +477,7 @@ footer {
     background-color: #5e1515;
     color: #ffffff;
 }
+
 .footer-subscribe>button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgb(0, 0, 0.2);
@@ -458,6 +509,7 @@ footer {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
+
 .register-link a {
     text-decoration: none;
     font-weight: bold;
@@ -465,12 +517,12 @@ footer {
     color: rgb(0, 0, 0);
     margin-left: 20px;
     top: 20px;
-  }
-  
-  .register-link a:hover {
+}
+
+.register-link a:hover {
     color: rgb(255, 255, 255);
     transition: .4s;
-  }
+}
 
 /*? footer columns */
 .footer-columns {
@@ -577,27 +629,34 @@ footer {
 .social-links:hover {
     transform: scale(1.1);
 }
-.fa-instagram{
+
+.fa-instagram {
     color: #e9a322;
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
     color: #4cce2c;
 }
-.fa-linkedin{
+
+.fa-linkedin {
     color: #205fe7;
 }
-.fa-youtube{
+
+.fa-youtube {
     color: #f50b0b;
 }
-.fa-github{
+
+.fa-github {
     color: #111420;
 }
+
 /*? mobile */
 
 @media (max-width: 800px) {
     .footer-subscribe>button {
         margin-left: 100px;
     }
+
     .footer-top {
         display: flex;
         flex-direction: column;
@@ -613,14 +672,16 @@ footer {
         justify-content: center;
         margin: 0 auto;
     }
-    .subir{
+
+    .subir {
         top: 420px;
     }
 }
+
 .subir {
     height: 50px;
     width: 50px !important;
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0));
     color: #f5f5f5;
     position: fixed;
     right: 60px;
