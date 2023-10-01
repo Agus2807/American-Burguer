@@ -1,10 +1,8 @@
-*
+* 
     margin: 0px
     padding: 0px
     box-sizing: border-box
 
-
-$color1: linear-gradient(#5f0000 , rgb(163, 0, 0))
 
 body 
     background-image: url(../img/fondo\ american.jpg)
@@ -14,13 +12,15 @@ body
 
 .navbar 
     height: 150px
-    background-image: url(../img/fondo\ american.jpg)
+    background-color: white
     background-position: center
     background-size: cover
 
+
 .container-fluid 
-    background-color: $color2
+    background-color: rgba(255, 255, 255, 0.842)
     height: 170px
+
 
 .img-navbar 
     height: 150px
@@ -29,15 +29,19 @@ body
     animation-delay: 0s
     animation-iteration-count: 1
 
-@keyframes aparecer
-    0%
+
+@keyframes aparecer 
+    0% 
         opacity: 0
     
-    50%
+
+    50% 
         transform: translateX(300px)
     
-    100%
+
+    100% 
         opacity: 1
+    
 
 
 .nav-link 
@@ -51,10 +55,10 @@ body
     padding: 1em 2.5em
     text-transform: uppercase
     border-radius: 1em
-    transition: all .2s
+    transition: all 0.2s
     letter-spacing: 8px
     border: 2px solid rgb(255, 255, 255)
-    background-image: $color1
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0))
 
 
 .nav-link:hover 
@@ -77,7 +81,7 @@ body
     top: 0
     left: 0
     z-index: -1
-    transition: all .4s
+    transition: all 0.4s
 
 
 .nav-link::after 
@@ -95,26 +99,30 @@ body
     margin-top: 8px
     background-color: transparent
 
+
 .jumbotron 
     background-image: url(../img/imagen\ seccion.jpg)
-    height: $ancho - $alto
+    height: 300px
     margin-top: 10px
     background-position: center
     background-size: cover
     transition: height 2.7s
     border: 3px solid grey
 
-.jumbotron:hover
+
+.jumbotron:hover 
     height: 700px
+
 
 .jumbotron1 
     background-image: url(../img/depositphotos_286856430-stock-photo-tasty-burger-with-french-fries.jpg)
-    height: $ancho
+    height: 500px
     background-position: center
     background-size: cover
     border: 2px solid rgb(0, 0, 0)
 
-h3
+
+h3 
     font-family: sans-serif
     text-transform: uppercase
     padding-top: 100px
@@ -122,13 +130,14 @@ h3
     color: white
     text-shadow: 5px 5px 5px #000000
 
+
 h1 
     font-family: sans-serif
     text-transform: uppercase
     text-align: center
     padding-top: 150px
     color: white
-    text-shadow: 5px 5px 5px $color4
+    text-shadow: 5px 5px 5px grey
     animation-duration: 2s
     animation-name: bienvenido
     animation-delay: 0s
@@ -137,42 +146,40 @@ h1
     /*animation-timing-fuction: ease-in*/
 
 
-@keyframes bienvenido
-    from
+@keyframes bienvenido 
+    from 
         opacity: 0
     
-    to
+
+    to 
         opacity: 1
     
 
-#menu
+
+#menu 
     height: 100%
     width: 100%
+
 
 h2 
     position: relative
     text-align: center
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, "Times New Roman", Times, serif
     font-size: 60px !important
     color: rgb(255, 255, 255)
     border: 2px solid rgb(0, 0, 0)
-    background-image: linear-gradient(#5f0000 , rgb(0, 0, 0)) 
+    background-image: linear-gradient(#5f0000, rgb(0, 0, 0))
 
-a
+
+a 
     text-decoration: none !important
 
-$img1: clasica
-$img2: doble
-$img3: vegan
 
-$animal: $img2
-.clasica
-    @if $animal==$img1 
-        background-image: url(../img/Clasica.png)
-        background-position: center
-        background-size: cover
-    
-    border: 3px solid $color4
+.clasica 
+    background-image: url(../img/Clasica.png)
+    background-position: center
+    background-size: cover
+    border: 3px solid grey
     height: 700px
     width: 40%
     border-radius: 15px
@@ -180,10 +187,12 @@ $animal: $img2
     margin-left: 100px
     transition: all 0.9s !important
 
-.clasica:hover
+
+.clasica:hover 
     transform: scale(1.08) !important
 
-.clasica .texto
+
+.clasica .texto 
     position: relative
     height: 450px
     left: 50%
@@ -193,23 +202,23 @@ $animal: $img2
     font-weight: bold
     font-size: 38px
     padding-top: 50px
-    font-family: 'Montserrat', sans-serif
+    font-family: "Montserrat", sans-serif
     border-radius: 5px
-    background-image: linear-gradient(rgba(0, 0, 0, 0.945) , rgba(0, 0, 0, 0.048))
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945), rgba(0, 0, 0, 0.048))
     transform: translate(-50%, -50%)
     opacity: 0
     transition: opacity 0.3s ease-in-out
 
-.clasica:hover .texto
+
+.clasica:hover .texto 
     opacity: 1
 
-.doble
-    @else if $animal==$img2 
-        background-image: url(../img/Doble.jpeg)
-        background-position: center
-        background-size: cover
-    
-    border: 3px solid $color4
+
+.doble 
+    background-image: url(../img/Doble.jpeg)
+    background-position: center
+    background-size: cover
+    border: 3px solid grey
     height: 600px
     width: 40%
     border-radius: 15px
@@ -217,10 +226,12 @@ $animal: $img2
     float: right
     transition: all 0.9s !important
 
-.doble:hover
+
+.doble:hover 
     transform: scale(1.08) !important
 
-.doble .texto
+
+.doble .texto 
     position: relative
     height: 450px
     left: 50%
@@ -230,23 +241,23 @@ $animal: $img2
     font-weight: bold
     font-size: 38px
     padding-top: 50px
-    font-family: 'Montserrat', sans-serif
+    font-family: "Montserrat", sans-serif
     border-radius: 8px
-    background-image: linear-gradient(rgba(0, 0, 0, 0.945) , rgba(0, 0, 0, 0.048))
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945), rgba(0, 0, 0, 0.048))
     transform: translate(-50%, -50%)
     opacity: 0
     transition: opacity 0.3s ease-in-out
 
-.doble:hover .texto
+
+.doble:hover .texto 
     opacity: 1
 
-.vegan
-    @else if $animal==$img3 
-        background-image: url(../img/Vegetariana.png)
-        background-position: center
-        background-size: cover
-    
-    border: 3px solid $color4
+
+.vegan 
+    background-image: url(../img/Vegetariana.png)
+    background-position: center
+    background-size: cover
+    border: 3px solid grey
     height: 600px
     width: 40%
     border-radius: 15px
@@ -254,10 +265,12 @@ $animal: $img2
     margin-left: 100px
     transition: all 0.9s !important
 
-.vegan:hover
+
+.vegan:hover 
     transform: scale(1.08) !important
 
-.vegan .texto
+
+.vegan .texto 
     position: relative
     height: 450px
     left: 50%
@@ -267,112 +280,136 @@ $animal: $img2
     font-weight: bold
     font-size: 38px
     padding-top: 50px
-    font-family: 'Montserrat', sans-serif
+    font-family: "Montserrat", sans-serif
     border-radius: 8px
-    background-image: linear-gradient(rgba(0, 0, 0, 0.945) , rgba(0, 0, 0, 0.048))
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945), rgba(0, 0, 0, 0.048))
     transform: translate(-50%, -50%)
     opacity: 0
     transition: opacity 0.3s ease-in-out
 
-.vegan:hover .texto
+
+.vegan:hover .texto 
     opacity: 1
 
-@media (max-width:700px)
-    .clasica
+
+@media (max-width: 700px) 
+    .clasica 
         height: 30%
         width: 95%
         margin-left: 2%
     
-    .clasica .texto
+
+    .clasica .texto 
         top: 225px
     
-    .doble
+
+    .doble 
         margin-top: 100px
         height: 30%
         width: 95%
         margin-right: 2%
     
-    .doble .texto
+
+    .doble .texto 
         top: 225px
     
-    .vegan
+
+    .vegan 
         height: 30%
         width: 95%
         margin-left: 2%
     
-    .vegan .texto
-        top: 225px
-        
 
-@media (max-width:700px) 
-    .img-navbar
+    .vegan .texto 
+        top: 225px
+    
+
+
+@media (max-width: 700px) 
+    .img-navbar 
         height: 100px
         margin-left: 85px
         margin-top: 20px
     
+
     .container-fluid 
         height: 150px
     
+
     .nav-link::after 
         content: ""
         background-color: rgba(107, 12, 12, 0)
         width: 1%
     
+
     .navbar-collapse 
         display: flex
         z-index: 1
     
-    .navbar-toggler-icon
-        background-color: #4442425e
+
+    .navbar-toggler-icon 
+        background-color: rgba(68, 66, 66, 0.368627451)
         border-radius: 5px
     
-    .carrito
+
+    .carrito 
         position: relative
         z-index: 9
         bottom: 80px
     
-    .jumbotron
+
+    .jumbotron 
         height: 500px
         z-index: 0
     
-    .jumbotron1
+
+    .jumbotron1 
         height: 400px
     
-    h3
+
+    h3 
         width: 100%
     
-    #menu
+
+    #menu 
         margin-top: 50px
     
+
     #contact 
         padding-top: 10%
     
 
+
 #contact 
     margin-top: 80px
-    background-color: #000000cb
+    background-color: rgba(0, 0, 0, 0.7960784314)
+
 
 .formulario 
     height: 550px
     border: 1px solid rgba(37, 37, 37, 0.63)
 
-.form-control
+
+.form-control 
     height: 45px !important
     width: 50% !important
     margin-bottom: 1%
     margin-left: 10px
 
-.form-control-x
+
+.form-control-x 
     height: 250px !important
     border-radius: 20px !important
     margin-left: 20px
     width: 50% !important
 
-.indicador
+
+.indicador 
     margin-left: 20px
 
+
 .btn-info 
-    background-image: $color1
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0))
     color: white
     height: 50px
     width: 120px !important
@@ -383,8 +420,9 @@ $animal: $img2
     font-weight: bold !important
     text-transform: uppercase
     border-radius: 1em
-    transition: all .2s
+    transition: all 0.2s
     border: 2px solid rgb(255, 255, 255)
+
 
 .btn-info:hover 
     transform: translateY(-3px)
@@ -406,21 +444,21 @@ $animal: $img2
     top: 0
     left: 0
     z-index: -1
-    transition: all .4s
+    transition: all 0.4s
+
 
 .btn-info:hover::after 
     transform: scaleX(1.4) scaleY(1.6)
     opacity: 0
+
 
 .comment 
     margin-left: 10px
     color: rgb(255, 255, 255)
     font-weight: bold
     font-size: 20px
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif
 
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap')
 
 /*? footer reset */
 *::after,
@@ -428,6 +466,7 @@ $animal: $img2
     margin: 0px
     padding: 0px
     box-sizing: border-box
+
 
 footer 
     position: relative
@@ -461,8 +500,7 @@ footer
     display: block
     width: 100%
     height: 8px
-    background: linear-gradient(90deg, #741111,
-            #f1ebeb 50%, #940505)
+    background: linear-gradient(90deg, #741111, #f1ebeb 50%, #940505)
 
 
 /*? footer subscribe */
@@ -496,10 +534,10 @@ footer
     padding: 1em 2.5em
     display: inline-block
     border-radius: 6em
-    transition: all .2s
+    transition: all 0.2s
     font-family: inherit
     color: rgb(255, 255, 255)
-    background-image: $color1
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0))
     font-family: Verdana, Geneva, Tahoma, sans-serif
     border: 3px solid white
     font-weight: bold
@@ -509,9 +547,10 @@ footer
     background-color: #5e1515
     color: #ffffff
 
+
 .footer-subscribe>button:hover 
     transform: translateY(-3px)
-    box-shadow: 0 10px 20px rgb(0, 0, 0.2)
+    box-shadow: 0 10px 20px rgb(0, 0, 0)
 
 
 .footer-subscribe>button:active 
@@ -529,7 +568,7 @@ footer
     top: 0
     left: 0
     z-index: -1
-    transition: all .4s
+    transition: all 0.4s
 
 
 .footer-subscribe>button::after 
@@ -540,6 +579,7 @@ footer
     transform: scaleX(1.4) scaleY(1.6)
     opacity: 0
 
+
 .register-link a 
     text-decoration: none
     font-weight: bold
@@ -547,12 +587,12 @@ footer
     color: rgb(0, 0, 0)
     margin-left: 20px
     top: 20px
-  
-  
-  .register-link a:hover 
+
+
+.register-link a:hover 
     color: rgb(255, 255, 255)
-    transition: .4s
-  
+    transition: 0.4s
+
 
 /*? footer columns */
 .footer-columns 
@@ -568,6 +608,7 @@ footer
     margin: 0 auto
     border-top: 1px solid var(--text-gray)
 
+
 .footer-columns>section 
     min-width: 150px
 
@@ -579,7 +620,7 @@ footer
     justify-content: start
     min-width: 180px
     gap: 8px
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
 
 
 .footer-logo img 
@@ -589,7 +630,6 @@ footer
 
 
 /*? Footer bottom */
-
 .footer-bottom 
     text-align: center
     border-top: 1px solid var(--text-gray)
@@ -617,7 +657,6 @@ footer
 
 
 /*? socials */
-
 .social-links 
     display: flex
     gap: 15px
@@ -628,30 +667,33 @@ footer
 .social-links:hover 
     transform: scale(1.1)
 
-.fa-instagram
+
+.fa-instagram 
     color: #e9a322
 
-.fa-whatsapp
+
+.fa-whatsapp 
     color: #4cce2c
 
-.fa-linkedin
+
+.fa-linkedin 
     color: #205fe7
 
-.fa-youtube
+
+.fa-youtube 
     color: #f50b0b
 
-.fa-github
+
+.fa-github 
     color: #111420
 
 
-
-
 /*? mobile */
-
 @media (max-width: 800px) 
     .footer-subscribe>button 
-        margin-left: 95px
+        margin-left: 100px
     
+
     .footer-top 
         display: flex
         flex-direction: column
@@ -667,15 +709,17 @@ footer
         justify-content: center
         margin: 0 auto
     
-    .subir
+
+    .subir 
         top: 450px
         margin-right: 67px
     
 
+
 .subir 
     height: 50px
     width: 50px !important
-    background-image: $color1
+    background-image: linear-gradient(#5f0000, rgb(163, 0, 0))
     color: #f5f5f5
     position: fixed
     right: 40px
@@ -688,3 +732,4 @@ footer
 
 .subir:hover 
     color: white
+
