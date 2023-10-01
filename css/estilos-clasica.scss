@@ -369,10 +369,6 @@ h2 {
     transition: all .4s;
 }
 
-.btn-info::after {
-    background-color: rgb(107, 12, 12);
-}
-
 .btn-info:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
