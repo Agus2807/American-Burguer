@@ -1,0 +1,654 @@
+body 
+    background-image: url(../img/fondo\ american.jpg)
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+
+.navbar 
+    height: 160px
+    background-image: url(/img/fondo\ american.jpg)
+    background-position: center
+    background-size: cover
+
+
+.container-fluid 
+    background-color: rgba(255, 255, 255, 0.842)
+    height: 170px
+
+
+.img-navbar 
+    height: 150px
+    animation-duration: 1.5s
+    animation-name: aparecer
+    animation-delay: 0s
+    animation-iteration-count: 1
+
+@keyframes aparecer
+    0%
+        opacity: 0
+    
+    50%
+        transform: translateX(300px)
+    
+    100%
+        opacity: 1
+        /*transform: translate(800px, 800px)
+        rotate*/
+
+
+
+.nav-link 
+    width: 200px
+    margin-top: 10px
+    margin-right: 20px
+    text-align: center
+    color: rgb(255, 255, 255) !important
+    font-family: Arial, Helvetica, sans-serif
+    font-weight: bold !important
+    letter-spacing: 2px
+    text-transform: uppercase
+    border-radius: 1em
+    transition: all .2s
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0))
+    letter-spacing: 8px
+    border: 2px solid rgb(255, 255, 255)
+
+
+.nav-link:hover 
+    transform: translateY(-3px)
+    box-shadow: 0 10px 20px rgb(0, 0, 0)
+
+
+.nav-link:active 
+    transform: translateY(-1px)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+
+
+.nav-link::after 
+    content: "🍔"
+    display: inline-block
+    height: 100%
+    width: 100%
+    border-radius: 100px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    transition: all .4s
+
+
+.nav-link::after 
+    background-color: rgb(107, 12, 12)
+
+
+.nav-link:hover::after 
+    transform: scaleX(1.4) scaleY(1.6)
+    opacity: 0
+
+
+.carrito 
+    color: rgb(143, 17, 17)
+    font-size: 30px
+    margin-top: 8px
+
+.titulo 
+    position: relative
+    text-align: center
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 60px !important
+    color: rgb(255, 255, 255)
+    background-image: linear-gradient(rgb(163, 0, 0), #5f0000)
+
+.conteiner-fluid-x 
+    height: 600px
+    width: 100%
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0))
+    margin-top: 2px
+
+.nleft .vegan 
+    position: relative
+    width: 600px
+    height: 593px
+    border: 3px solid gray
+
+.nright h4 
+    font-size: 28px
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    color: aliceblue
+    text-shadow: 0 0 5px black
+    position: relative
+    font-weight: bold
+
+.nright u 
+    font-size: 28px
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    color: aliceblue
+    text-shadow: 0 0 5px black
+    position: relative
+    text-decoration: none
+    font-weight: bold
+    top: 50px
+    left: 28px
+
+/*boton compra*/
+.compra 
+    position: relative
+    text-decoration: none
+    color: rgb(255, 255, 255)
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-size: 15px
+    padding: 1em 2.5em
+    text-transform: uppercase
+    border-radius: 8em
+    transition: all .2s
+    font-weight: 400%
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0))
+    letter-spacing: 2px
+    border: 3px solid white
+    top: 150px
+    right: 100px
+
+
+.compra a 
+    text-decoration: none
+    color: white
+    font-size: 15px
+
+
+.compra:hover 
+    transform: translateY(-3px)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+
+
+.compra:active 
+    transform: translateY(-1px)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+
+
+.compra::after 
+    content: "🍔"
+    display: inline-block
+    height: 100%
+    width: 100%
+    border-radius: 100px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    transition: all .4s
+
+
+.compra::after 
+    background-color: rgb(107, 12, 12)
+
+
+.compra:hover::after 
+    transform: scaleX(1.4) scaleY(1.6)
+    opacity: 0
+
+@media (max-width:700px) 
+    .img-navbar
+        height: 100px
+        margin-left: 85px
+        margin-top: 20px
+    
+    .container-fluid 
+        height: 150px
+    
+    .nav-link::after 
+        content: ""
+        background-color: rgba(107, 12, 12, 0)
+        width: 1%
+    
+    .navbar-collapse 
+        display: flex
+        z-index: 1
+    
+    .navbar-toggler-icon
+        background-color: #4442425e
+        border-radius: 5px
+    
+    .carrito
+        position: relative
+        z-index: 9
+        bottom: 80px
+    
+    .nleft .vegan
+        width: 100%
+        height: 400px
+        border: 3px solid gray
+    
+    .compra 
+        top: 110px
+        right: 12%
+    
+    .nright 
+        text-align: center   
+    
+    .nright u
+        left: 85px
+    
+    .titulo
+        font-size: 32px !important
+    
+    .conteiner-fluid-x
+        height: 680px
+    
+    .carousel-caption a
+        font-size: 20px !important
+    
+    .d-block
+        height: 500px !important
+    
+
+.d-block
+    height: 700px
+
+.carousel-caption a
+    font-size: 35px
+    border-radius: 10px
+    text-decoration: none
+    background-color: #ffffff62
+    color: #000000
+    font-weight: bold
+    box-shadow: 0 0 50px black
+    text-transform: uppercase
+    transition: all .2s
+
+.carousel-caption a:hover 
+    transform: translateY(-3px)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.473)
+
+
+.carousel-caption a:active 
+    transform: translateY(-1px)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541)
+
+h2 
+    position: relative
+    text-align: center
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 60px !important
+    color: rgb(255, 255, 255)
+    border: 2px solid rgb(0, 0, 0)
+    background-image: linear-gradient(#5f0000 , rgb(0, 0, 0))
+
+#contact 
+    background-color: #000000cb
+
+.formulario 
+    height: 550px
+    border: 1px solid rgba(37, 37, 37, 0.63)
+
+.form-control
+    height: 45px !important
+    width: 50% !important
+    margin-bottom: 1%
+    margin-left: 10px
+
+.form-control-x
+    height: 250px !important
+    border-radius: 20px !important
+    margin-left: 20px
+    width: 50% !important
+
+.btn-info 
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0))
+    color: white
+    height: 50px
+    width: 120px !important
+    margin-left: 2%
+    margin-bottom: 1%
+    font-size: 15px
+    font-family: Arial, Helvetica, sans-serif !important
+    font-weight: bold !important
+    text-transform: uppercase
+    border-radius: 1em
+    transition: all .2s
+    border: 2px solid rgb(255, 255, 255)
+
+.btn-info:hover 
+    transform: translateY(-3px)
+    box-shadow: 0 10px 20px rgb(0, 0, 0)
+
+
+.btn-info:active 
+    transform: translateY(-1px)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+
+
+.btn-info::after 
+    content: "🍔"
+    display: inline-block
+    height: 100%
+    width: 100%
+    border-radius: 100px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    transition: all .4s
+
+
+.btn-info::after 
+    background-color: rgb(107, 12, 12)
+
+
+.btn-info:hover::after 
+    transform: scaleX(1.4) scaleY(1.6)
+    opacity: 0
+
+
+.comment 
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    font-size: 20px
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap')
+
+:root 
+    --footer-background: white
+    --text-color: #111420
+    --text-gray: #e1e1e1
+    --text-heading-gray: #b9b9b9
+
+
+/*? footer reset */
+*,
+*::after,
+*::before 
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+
+
+footer 
+    position: relative
+    background-image: linear-gradient(to top right, rgb(255, 255, 255) 50%, rgb(133, 18, 18))
+    min-width: 300px
+    width: 100vw
+    bottom: 0px
+    display: flex
+    align-items: center
+    flex-direction: column
+
+
+.footer-wrapper 
+    display: flex
+    flex-direction: column
+    max-width: 1320px
+    padding: 16px
+
+
+
+/*? top section */
+.footer-top 
+    display: flex
+    flex-wrap: wrap
+    justify-content: start
+    align-items: start
+    padding: 16px 0px
+    justify-content: space-between
+
+
+.footer-line 
+    display: block
+    width: 100%
+    height: 8px
+    background: linear-gradient(90deg, #741111,
+            #f1ebeb 50%, #940505)
+
+
+/*? footer subscribe */
+.footer-subscribe 
+    display: flex
+    gap: 12px
+    flex-wrap: wrap
+
+
+.footer-subscribe>input 
+    border: 1px solid var(--text-gray)
+    color: var(--text-color)
+    margin-top: 20px
+    margin-left: 15px
+    min-height: 36px
+    max-height: 50px
+    font-size: 1.2rem
+    flex: 1 0 120px
+    padding: 25px 12px
+    border-radius: 8px
+
+
+.footer-subscribe>button 
+    position: relative
+    height: 60px
+    margin-top: 15px
+    margin-left: 15px
+    font-size: 15px
+    text-transform: uppercase
+    text-decoration: none
+    padding: 1em 2.5em
+    display: inline-block
+    border-radius: 6em
+    transition: all .2s
+    font-family: inherit
+    color: rgb(255, 255, 255)
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0))
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    border: 3px solid white
+    font-weight: bold
+
+
+
+.footer-subscribe>button:hover 
+    background-color: #5e1515
+    color: #ffffff
+
+.footer-subscribe>button:hover 
+    transform: translateY(-3px)
+    box-shadow: 0 10px 20px rgb(0, 0, 0.2)
+
+
+.footer-subscribe>button:active 
+    transform: translateY(-1px)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+
+
+.footer-subscribe>button:after 
+    content: "🍔"
+    display: inline-block
+    height: 100%
+    width: 100%
+    border-radius: 100px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    transition: all .4s
+
+
+.footer-subscribe>button::after 
+    background-color: #971515
+
+
+.footer-subscribe>button:hover::after 
+    transform: scaleX(1.4) scaleY(1.6)
+    opacity: 0
+
+.register-link a 
+    text-decoration: none
+    font-weight: bold
+    font-size: 17px
+    color: rgb(0, 0, 0)
+    margin-left: 20px
+    top: 20px
+  
+  
+  .register-link a:hover 
+    color: rgb(255, 255, 255)
+    transition: .4s
+  
+
+
+/*? footer columns */
+.footer-columns 
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: start
+    align-items: start
+    flex: 2 0 140px
+    width: 100%
+    gap: 16px
+    padding: 24px 8px 16px 8px
+    margin: 0 auto
+    border-top: 1px solid var(--text-gray)
+
+
+.footer-columns ul 
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+
+.footer-columns ul a 
+    color: var(--text-color)
+    text-decoration: none
+
+
+.footer-columns ul a:hover 
+    text-decoration: underline
+
+
+.footer-columns ul li 
+    margin-bottom: 16px
+
+
+.footer-columns h4 
+    color: var(--footer-heading-gray)
+    margin-top: 0
+    margin-bottom: 25px
+    font-size: 1.125rem
+
+
+.footer-centering 
+    margin: 0 auto
+
+
+.footer-columns>section 
+    min-width: 150px
+
+
+.footer-logo 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: start
+    min-width: 180px
+    gap: 8px
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+
+.footer-logo img 
+    stroke: var(--text-color)
+    stroke-width: 8px
+    height: 70px
+
+
+/*? Footer bottom */
+
+.footer-bottom 
+    text-align: center
+    border-top: 1px solid var(--text-gray)
+    margin-top: 48px
+    display: flex
+    align-items: center
+    width: 100%
+    gap: 8px
+    padding: 16px 0px
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+.footer-bottom>small 
+    font-size: 16px
+    margin: 0 4px
+
+
+.footer-headline>h4 
+    margin: 0px
+
+
+.footer-headline>p 
+    margin: 12px 0px
+
+
+/*? socials */
+
+.social-links 
+    display: flex
+    gap: 15px
+    transition: all 0.2s ease-in-out
+    font-size: 25px
+
+
+.social-links:hover 
+    transform: scale(1.1)
+
+.fa-instagram
+    color: #e9a322
+
+.fa-whatsapp
+    color: #4cce2c
+
+.fa-linkedin
+    color: #205fe7
+
+.fa-youtube
+    color: #f50b0b
+
+.fa-github
+    color: #111420
+
+/*? mobile */
+
+@media (max-width: 800px) 
+    .footer-subscribe>button 
+        margin-left: 95px
+    
+    .footer-top 
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        padding: 16px 8px 32px 8px
+    
+
+    .footer-bottom 
+        display: flex
+        flex-direction: column-reverse
+        align-items: space-between
+        justify-content: center
+        margin: 0 auto
+    
+    .subir 
+        top: 420px 
+        margin-right: 10px
+     
+
+.subir 
+    height: 50px
+    width: 50px !important
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0))
+    color: #f5f5f5
+    position: fixed
+    right: 60px
+    bottom: 70px
+    font-size: 25px
+    text-align: center
+    line-height: 50px
+    box-shadow: 0 0 5px white
+
+
+.subir:hover 
+    color: white

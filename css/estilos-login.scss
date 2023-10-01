@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@200&family=REM:wght@300&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Oswald:wght@200&family=REM:wght@300&family=Roboto:wght@100&display=swap');
+
+// font-family: 'Barlow', cursive;
+// font-family: 'Delicious Handrawn', cursive;
+// font-family: 'Farsan', cursive;
+// font-family: 'lato', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Oswald:wght@200&family=Playfair+Display:ital,wght@1,600&family=REM:wght@300&family=Roboto:wght@100&display=swap');
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'REM', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+$color1: linear-gradient(#5f0000 , rgb(163, 0, 0));
+$color2: rgba(255, 255, 255, 0.842);
+$color3:  rgb(107, 12, 12);
+$color4: grey;
+$font1: Arial, Helvetica, sans-serif;
+$font2: sans-serif;
+$font3: 'Montserrat', sans-serif;
+$font4: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+$var1: 100%;
+$var2: 50%;
+
+$ancho: 500px;
+$alto: 200px;
+
+body {
+    background-image: url(../img/fondo\ american.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  form {
+    width: 100%;
+    height: 100%;
+    background: #ffffffd2;
+    border: none;
+    position: absolute;
+  }
+  h1 {
+    text-align: center;
+    color: #7c0404;
+    font-weight: bold !important;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 200px;
+  }
+  h1 span {
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .casilla input{
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;  
+    background-color: black;
+  }
+  .casilla input:hover {
+    border: 1px solid #ff1c1c;
+    background-color: black;
+    width: 400px;
+    border-radius: 10px;  
+    color: white;
+  }
+  .casilla input::placeholder {
+  color: #ffffff;
+  }
+  .btn-primary {
+    position: relative;
+    margin-left: 39.5%;
+    width: 400px;
+    border-radius: 2em;
+    background-color: black;
+    color: white; 
+  }
+  .btn-primary:hover {
+    transition: .4s;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(207, 2, 2) , rgb(99, 0, 0));
+    color: rgb(255, 255, 255);
+  }
+  @media (max-width: 580px) {
+    h1{
+        font-size: 250% !important;
+        padding-top: 100px !important;
+    }
+    .casilla input{
+        width: 100%;
+    }
+    .btn-primary{
+      width: 377px;
+      right: 150px;
+    }
+    .volver{
+      right: 57px;
+    }
+  }
+  .register-link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #111;
+    text-align: center;
+  }
+  .register-link a {
+    text-decoration: none;
+    color: rgb(110, 0, 0);
+    padding-left: 10px;
+  }
+  
+  .register-link a:hover {
+    color: rgb(0, 0, 0);
+    transition: .4s;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .social svg {
+    cursor: pointer;
+  }
+  .volver {
+    width: 150px;
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 1em 2.5em;
+    text-transform: uppercase;
+    border-radius: 8em;
+    transition: all .2s;
+    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
+    letter-spacing: 2px;
+    border: 3px solid white;
+    margin-left: 46%;
+    margin-top: 2%;
+  }
+  
+  .volver a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .volver a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .volver:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .volver:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .volver::after {
+    content: "🍔";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    
+  }
+  .volver::after {
+    background-color: #971515;
+  }
+  .volver:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  

@@ -1,6 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@200&family=REM:wght@300&family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Oswald:wght@200&family=REM:wght@300&family=Roboto:wght@100&display=swap');
+
+// font-family: 'Barlow', cursive;
+// font-family: 'Delicious Handrawn', cursive;
+// font-family: 'Farsan', cursive;
+// font-family: 'lato', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&family=Oswald:wght@200&family=Playfair+Display:ital,wght@1,600&family=REM:wght@300&family=Roboto:wght@100&display=swap');
+
+/*font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'REM', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+$color1: linear-gradient(#5f0000 , rgb(163, 0, 0));
+$color2: rgba(255, 255, 255, 0.842);
+$color3:  rgb(107, 12, 12);
+$color4: grey;
+$font1: Arial, Helvetica, sans-serif;
+$font2: sans-serif;
+$font3: 'Montserrat', sans-serif;
+$font4: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+$var1: 100%;
+$var2: 50%;
+
+$ancho: 500px;
+$alto: 200px;
+
 body {
     background-image: url(../img/fondo\ american.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
 }
 .navbar {
@@ -35,7 +72,6 @@ body {
         rotate*/
 }
 }
-
 .nav-link {
     width: 200px;
     margin-top: 10px;
@@ -90,7 +126,6 @@ body {
     font-size: 30px;
     margin-top: 8px;
 }
-
 .titulo {
     position: relative;
     text-align: center;
@@ -100,18 +135,17 @@ body {
     background-image: linear-gradient(rgb(163, 0, 0), #5f0000);
 }
 /*seccion de compra*/
-.conteiner-fluid-x{
+.conteiner-fluid-x {
     height: 600px;
     width: 100%;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     margin-top: 2px;
 }
-
-.nleft .clasic {
+.nleft .doble {
     background-size: cover;
     background-position: center;
     width: 600px;
-    height: 594px;
+    height: 595px;
     border: 3px solid gray;
 }
 .nright h3 {
@@ -119,28 +153,23 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
+    position: relative;
+    font-weight: bold;
+    top: 10px;
     font-weight: bold;
 }
-
-.nright span {
+.nright s {
     font-size: 28px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
-    text-shadow: 0 0 5px black;
-    font-weight: bold;
-}
-
-.nright p {
-    font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
     text-shadow: 0 0 5px black;
-    padding-top: 5%;
-    padding-left: 30px;
+    position: relative;
+    text-decoration: none;
+    top: 50px;
+    left: 30px;
+    font-weight: bold;
 }
-/*boton compra*/
-.compra {
-    width: 180px;
+.compra__doble {
     position: relative;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -150,28 +179,31 @@ body {
     text-transform: uppercase;
     border-radius: 8em;
     transition: all .2s;
+    font-weight: 400%;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
     letter-spacing: 2px;
-    border: 3px solid white; 
+    border: 3px solid white;
+    top: 150px;
+    right: 100px;
 }
 
-.compra a {
+.compra__doble a {
     text-decoration: none;
     color: white;
     font-size: 15px;
 }
 
-.compra:hover {
+.compra__doble:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.compra:active {
+.compra__doble:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.compra::after {
+.compra__doble::after {
     content: "🍔";
     display: inline-block;
     height: 100%;
@@ -184,11 +216,11 @@ body {
     transition: all .4s;
 }
 
-.compra::after {
+.compra__doble::after {
     background-color: rgb(107, 12, 12);
 }
 
-.compra:hover::after {
+.compra__doble:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
@@ -219,22 +251,26 @@ body {
         z-index: 9;
         bottom: 80px;
     }
-    .conteiner-fluid-x{
-        height: 680px;
-    }
-    .nleft .clasic{
+    .nleft .doble{
         width: 100%;
         height: 400px;
         border: 3px solid gray;
     }
-    .nright {
-        text-align: center;
+    .compra__doble {
+        top: 110px;
+        right: 12%;
     }
-    .nright p{
-       padding-right: 30px;
+    .nright {
+        text-align: center;   
+    }
+    .nright s{
+        left: 85px;
     }
     .titulo{
         font-size: 39px !important;
+    }
+    .conteiner-fluid-x{
+        height: 680px;
     }
     .carousel-caption a{
         font-size: 20px !important;
@@ -265,8 +301,7 @@ body {
 .carousel-caption a:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
-}
-
+} 
 h2 {
     position: relative;
     text-align: center;
@@ -274,9 +309,9 @@ h2 {
     font-size: 60px !important;
     color: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
-    background-image: linear-gradient(#5f0000 , rgb(0, 0, 0)); 
+    background-image: linear-gradient(#5f0000 , rgb(0, 0, 0));
 }
-#contact { 
+#contact {
     background-color: #000000cb;
 }
 .formulario {
@@ -491,6 +526,7 @@ footer {
     transition: .4s;
   }
 
+
 /*? footer columns */
 .footer-columns {
     display: flex;
@@ -633,9 +669,9 @@ footer {
         margin: 0 auto;
     }
     .subir {
-       top: 420px; 
-       margin-right: 10px;
-    }
+        top: 420px; 
+        margin-right: 10px;
+     }
 }
 .subir {
     height: 50px;
