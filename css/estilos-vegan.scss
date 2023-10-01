@@ -234,6 +234,17 @@ body {
         margin-left: 85px;
         margin-top: 20px;
     }
+    @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          transform: translateY(100px);
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     .container-fluid {
         height: 150px;
     }

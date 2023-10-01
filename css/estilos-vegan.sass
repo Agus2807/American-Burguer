@@ -11,7 +11,7 @@ body
 
 .navbar 
     height: 160px
-    background-color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(255, 255, 255, 0.842)
     background-position: center
     background-size: cover
 
@@ -196,7 +196,17 @@ body
         height: 100px
         margin-left: 85px
         margin-top: 20px
-    
+    @keyframes aparecer {
+    0% {
+      opacity: 0
+    }
+    50% {
+      transform: translateY(100px)
+    }
+    100% {
+      opacity: 1
+    }
+  }
     .container-fluid 
         height: 150px
     
