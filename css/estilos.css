@@ -369,6 +369,9 @@ a {
   .jumbotron1 {
     height: 400px;
   }
+  h2 {
+    bottom: 50px;
+  }
   h3 {
     width: 100%;
   }
