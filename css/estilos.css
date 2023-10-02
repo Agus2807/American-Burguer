@@ -381,10 +381,20 @@ a {
   #contact {
     padding-top: 10%;
   }
+  .form-control {
+    width: 95% !important;
+  }
+  .form-control-x {
+    width: 90% !important;
+  }
+  .btn-info {
+    margin-left: 20px !important;
+  }
 }
 #contact {
   margin-top: 80px;
   background-color: rgba(0, 0, 0, 0.945);
+  width: 100%;
 }
 
 .formulario {
@@ -394,7 +404,6 @@ a {
 
 .form-control {
   height: 45px !important;
-  width: 50% !important;
   margin-bottom: 1%;
   margin-left: 10px;
 }
@@ -403,7 +412,6 @@ a {
   height: 250px !important;
   border-radius: 20px !important;
   margin-left: 20px;
-  width: 50% !important;
 }
 
 .indicador {

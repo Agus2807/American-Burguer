@@ -218,6 +218,15 @@ aside {
   .d-block {
     height: 500px !important;
   }
+  .form-control {
+    width: 95% !important;
+  }
+  .form-control-x {
+    width: 90% !important;
+  }
+  .btn-info {
+    margin-left: 20px !important;
+  }
 }
 #demo {
   height: 100%;
@@ -272,7 +281,6 @@ h2 {
 
 .form-control {
   height: 45px !important;
-  width: 50% !important;
   margin-bottom: 1%;
   margin-left: 10px;
 }
@@ -281,7 +289,10 @@ h2 {
   height: 250px !important;
   border-radius: 20px !important;
   margin-left: 20px;
-  width: 50% !important;
+}
+
+.indicador {
+  margin-left: 20px;
 }
 
 .btn-info {
@@ -291,6 +302,7 @@ h2 {
   width: 120px !important;
   margin-left: 2%;
   margin-bottom: 1%;
+  margin-top: 10px !important;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif !important;
   font-weight: bold !important;
