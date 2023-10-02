@@ -20,7 +20,7 @@ font-family: 'REM', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
 $color1: linear-gradient(#5f0000 , rgb(163, 0, 0));
-$color2: rgba(255, 255, 255, 0.842);
+$color2: rgba(255, 255, 255, 0.89);
 $color3:  rgb(107, 12, 12);
 $color4: grey;
 $font1: Arial, Helvetica, sans-serif;
@@ -40,19 +40,43 @@ body {
     background-attachment: fixed;
     background-position: center;
   }
+  header{
+    background-color: $color2;
+  }
+  .img-navbar {
+    height: 150px;
+    margin-left: 43%;
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
   form {
     width: 100%;
     height: 100%;
-    background: #ffffffe8;
+    background: $color2;
     border: none;
     position: absolute;
   }
   h1 {
     text-align: center;
-    color: #7c0404;
+    color: $color3;
     font-weight: bold !important;
     font-family: 'Times New Roman', Times, serif;
-    padding-top: 200px;
+    padding-top: 100px;
   }
   h1 span {
     color: black;
@@ -86,13 +110,30 @@ body {
   .btn-primary:hover {
     transition: .4s;
     cursor: pointer;
-    background-image: linear-gradient(rgb(207, 2, 2) , rgb(99, 0, 0));
+    background-image: $color1;
     color: rgb(255, 255, 255);
   }
-  @media (max-width: 580px) {
+  @media (max-width: 800px) {
+    .img-navbar{
+      height: 100px;
+      margin-left: 102px;
+    }
+    @keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+  
+      50% {
+          transform: translateY(100px);
+      }
+  
+      100% {
+          opacity: 1;
+      }
+}
     h1{
         font-size: 250% !important;
-        padding-top: 100px !important;
+        padding-top: 50px !important;
     }
     .casilla input{
         width: 100%;
@@ -102,7 +143,7 @@ body {
       right: 150px;
     }
     .volver{
-      right: 57px;
+      right: 60px;
     }
   }
   .register-link {
@@ -130,61 +171,3 @@ body {
   .social svg {
     cursor: pointer;
   }
-  .volver {
-    width: 150px;
-    position: relative;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    padding: 1em 2.5em;
-    text-transform: uppercase;
-    border-radius: 8em;
-    transition: all .2s;
-    background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
-    letter-spacing: 2px;
-    border: 3px solid white;
-    margin-left: 46%;
-    margin-top: 2%;
-  }
-  
-  .volver a {
-    text-decoration: none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .volver a:hover{
-    text-decoration: none;
-    color: white;
-  }
-  .volver:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .volver:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .volver::after {
-    content: "🍔";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-    
-  }
-  .volver::after {
-    background-color: #971515;
-  }
-  .volver:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-  }
-  
