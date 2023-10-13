@@ -160,7 +160,7 @@ body {
 }
 
 .container-fluid-x {
-    margin-top: 12px;
+    border: 10px solid rgb(156, 18, 18);
 }
 
 main {
@@ -201,7 +201,7 @@ aside {
     }
 
     iframe {
-        width: 370px;
+        width: 350px;
     }
 
     aside {
@@ -267,7 +267,9 @@ aside {
     .carousel-caption a {
         font-size: 20px !important;
     }
-
+    #demo{
+        width: 100% !important;
+    }
     .d-block {
         height: 500px !important;
     }
@@ -287,7 +289,9 @@ aside {
 
 #demo {
     height: 100%;
-    border: 2px solid black;
+    border: 10px solid rgb(75, 16, 16);
+    width: 60%;
+    border-radius: 1em;
 }
 
 .d-block {
@@ -391,11 +395,6 @@ h2 {
     z-index: -1;
     transition: all .4s;
 }
-
-.btn-info::after {
-    background-color: rgb(107, 12, 12);
-}
-
 .btn-info:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;

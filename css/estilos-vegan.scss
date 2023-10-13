@@ -43,7 +43,6 @@ $alto: 200px;
 body {
     background-image: url(../img/fondo\ american.jpg);
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
 }
 .navbar {
@@ -145,12 +144,12 @@ body {
     height: 600px;
     width: 100%;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
-    margin-top: 2px;
+    border: 10px solid #5f0000;
 }
 .nleft .vegan {
     position: relative;
     width: 600px;
-    height: 593px;
+    height: 585px;
     border: 3px solid gray;
 }
 .nright h4 {
@@ -284,6 +283,9 @@ body {
     .titulo{
         font-size: 32px !important;
     }
+    #demo{
+        width: 100% !important;
+    }
     .conteiner-fluid-x{
         height: 680px;
     }
@@ -305,6 +307,12 @@ body {
         margin-left: 20px !important;
         margin-top: 20px !important;
     }
+}
+#demo {
+    height: 100%;
+    border: 10px solid rgb(75, 16, 16);
+    width: 60%;
+    border-radius: 1em;
 }
 .d-block{
     height: 700px;
@@ -396,11 +404,6 @@ h2 {
     z-index: -1;
     transition: all .4s;
 }
-
-.btn-info::after {
-    background-color: rgb(107, 12, 12);
-}
-
 .btn-info:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;

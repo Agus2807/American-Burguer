@@ -146,14 +146,14 @@ body {
     height: 600px;
     width: 100%;
     background-image: linear-gradient(#5f0000 , rgb(163, 0, 0));
-    margin-top: 2px;
+    border: 10px solid #5f0000;
 }
 
 .nleft .clasic {
     background-size: cover;
     background-position: center;
     width: 600px;
-    height: 594px;
+    height: 585px;
     border: 3px solid gray;
 }
 .nright h3 {
@@ -289,6 +289,9 @@ body {
     .titulo{
         font-size: 39px !important;
     }
+    #demo{
+        width: 100% !important;
+    }
     .carousel-caption a{
         font-size: 20px !important;
     }
@@ -307,6 +310,13 @@ body {
         margin-left: 20px !important;
     }
 }
+#demo {
+    height: 100%;
+    border: 10px solid rgb(75, 16, 16);
+    width: 60%;
+    border-radius: 1em;
+}
+
 .d-block{
     height: 700px;
 }
@@ -398,11 +408,6 @@ h2 {
     z-index: -1;
     transition: all .4s;
 }
-
-.btn-info::after {
-    background-color: rgb(107, 12, 12);
-}
-
 .btn-info:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
