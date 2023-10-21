@@ -107,6 +107,8 @@ body {
   color: rgb(143, 17, 17);
   font-size: 30px;
   margin-top: 8px;
+  background-color: transparent;
+  margin-right: 20px;
 }
 
 .titulo {
@@ -250,7 +252,8 @@ body {
   .carrito {
     position: relative;
     z-index: 9;
-    bottom: 80px;
+    bottom: 100px;
+    margin-left: 20px;
   }
   .conteiner-fluid-x {
     height: 680px;
@@ -694,8 +697,7 @@ footer {
     margin: 0 auto;
   }
   .subir {
-    top: 420px;
-    margin-right: 10px;
+    top: 520px;
   }
 }
 .subir {

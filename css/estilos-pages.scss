@@ -20,7 +20,7 @@ font-family: 'REM', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
 $color1: linear-gradient(#5f0000, rgb(163, 0, 0));
-$color2: rgba(255, 255, 255, 0.842);
+$color2: rgb(255, 255, 255);
 $color3: rgb(107, 12, 12);
 $color4: grey;
 $font1: Arial,
@@ -57,7 +57,7 @@ body {
 }
 
 .navbar {
-    height: 150px;
+    height: 170px;
     background-color: $color2;
     background-position: center;
     background-size: cover;
@@ -149,7 +149,6 @@ body {
 }
 
 .titulo {
-    top: 10px;
     position: relative;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -158,11 +157,6 @@ body {
     border: 0px solid #5f0000;
     background-image: linear-gradient(rgb(163, 0, 0), #5f0000);
 }
-
-.container-fluid-x {
-    border: 10px solid rgb(156, 18, 18);
-}
-
 main {
     background-image: linear-gradient(#5f0000, rgb(163, 0, 0));
     height: 550px;
@@ -201,7 +195,7 @@ aside {
     }
 
     iframe {
-        width: 350px;
+        width: 380px;
     }
 
     aside {
@@ -261,7 +255,8 @@ aside {
     .carrito {
         position: relative;
         z-index: 9;
-        bottom: 80px;
+        bottom: 100px;
+        margin-left: 20px;
     }
 
     .carousel-caption a {
@@ -702,7 +697,7 @@ footer {
     }
 
     .subir {
-        top: 420px;
+        top: 500px;
     }
 }
 

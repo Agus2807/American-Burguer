@@ -22,14 +22,14 @@ body {
 }
 
 .navbar {
-  height: 150px;
-  background-color: rgba(255, 255, 255, 0.842);
+  height: 170px;
+  background-color: rgb(255, 255, 255);
   background-position: center;
   background-size: cover;
 }
 
 .container-fluid {
-  background-color: rgba(255, 255, 255, 0.842);
+  background-color: rgb(255, 255, 255);
   height: 170px;
 }
 
@@ -111,7 +111,6 @@ body {
 }
 
 .titulo {
-  top: 10px;
   position: relative;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -119,10 +118,6 @@ body {
   color: rgb(255, 255, 255);
   border: 0px solid #5f0000;
   background-image: linear-gradient(rgb(163, 0, 0), #5f0000);
-}
-
-.container-fluid-x {
-  border: 10px solid rgb(156, 18, 18);
 }
 
 main {
@@ -161,7 +156,7 @@ aside {
     width: 100%;
   }
   iframe {
-    width: 350px;
+    width: 380px;
   }
   aside {
     margin-left: 2px;
@@ -210,7 +205,8 @@ aside {
   .carrito {
     position: relative;
     z-index: 9;
-    bottom: 80px;
+    bottom: 100px;
+    margin-left: 20px;
   }
   .carousel-caption a {
     font-size: 20px !important;
@@ -637,7 +633,7 @@ footer {
     margin: 0 auto;
   }
   .subir {
-    top: 420px;
+    top: 500px;
   }
 }
 .subir {

@@ -21,14 +21,13 @@ body {
 }
 
 .navbar {
-  height: 150px;
+  height: 170px;
   background-color: white;
   background-position: center;
   background-size: cover;
 }
 
 .container-fluid {
-  background-color: white;
   height: 170px;
 }
 
@@ -105,12 +104,13 @@ body {
   font-size: 30px;
   margin-top: 8px;
   background-color: transparent;
+  margin-right: 20px;
 }
 
 .jumbotron {
   background-image: url(../img/imagen\ seccion.jpg);
   height: 300px;
-  margin-top: 10px;
+  margin-top: 1px;
   background-position: center;
   background-size: cover;
   transition: height 2.7s;
@@ -360,7 +360,8 @@ a {
   .carrito {
     position: relative;
     z-index: 9;
-    bottom: 80px;
+    bottom: 100px;
+    margin-left: 20px;
   }
   .jumbotron {
     height: 500px;
@@ -718,8 +719,8 @@ footer {
     margin: 0 auto;
   }
   .subir {
-    top: 450px;
-    margin-right: 67px;
+    top: 520px;
+    margin-right: 60px;
   }
 }
 .subir {
